@@ -1,0 +1,70 @@
+:root {
+  --bg: #0A0F1C;
+  --surface: #0F1626;
+  --text: #E8EDF6;
+  --muted: #9AA7BD;
+  --primary: #2B5AA7;
+  --accent: #18B3A6;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background: var(--surface);
+  padding: 1rem 0;
+}
+
+.brand-logo {
+  display: block;
+}
+
+.site-nav a {
+  color: var(--text);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 3rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section.alt {
+  background: var(--surface);
+}
+
+footer {
+  background: var(--surface);
+  padding: 1rem 0;
+  text-align: center;
+}
