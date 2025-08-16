@@ -3,80 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Favicons (SVG-first + Safari pinned tab + PNG fallbacks optional) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
+  <meta name="theme-color" content="#0A0F1C">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <title>Infralight — Infrastructure, Cloud & FinOps Consulting</title>
-  <meta name="description" content="Infralight helps organisations design resilient infrastructure, modernise in the cloud, and optimise spend with FinOps." />
+  <meta name="description" content="Infralight designs reliable infrastructure, modernises in the cloud, and optimises spend with FinOps." />
   <meta name="theme-color" content="#0A0F1C" />
   <link rel="canonical" href="https://infralight.co.uk/" />
-
-  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Infralight — Infrastructure, Cloud & FinOps Consulting" />
   <meta property="og:description" content="Design resilient infra, modernise in the cloud, and optimise spend with FinOps." />
   <meta property="og:url" content="https://infralight.co.uk/" />
-  <meta property="og:image" content="https://infralight.co.uk/og-image.png" />
+  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo-neon.png" />
   <meta property="og:locale" content="en_GB" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- PWA -->
   <link rel="manifest" href="/manifest.webmanifest" />
-
-  <!-- Styles / App -->
   <link rel="stylesheet" href="/styles.css" />
   <script defer src="/app.js"></script>
-
-  <!-- JSON-LD: Professional Service -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ProfessionalService",
-    "name":"Infralight",
-    "url":"https://infralight.co.uk/",
-    "logo":"https://infralight.co.uk/icons/icon-512.png",
-    "description":"IT consulting focused on infrastructure services, cloud services, and FinOps.",
-    "areaServed":"GB",
-    "sameAs":[]
-  }
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" data-elevate>
+  <!-- Header -->
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Infralight home">
-        <img src="/icons/infralight-logo.svg" alt="Infralight" class="brand-logo" width="220" height="40" />
+      <a class="brand" href="/" aria-label="Infralight home">
+        <picture>
+          <source srcset="/assets/logo/infralight-logo-light.png" media="(prefers-color-scheme: light)">
+          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" class="brand-logo" width="220" height="40" />
+        </picture>
       </a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav id="nav" class="site-nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#cases">Case Studies</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-primary">Book a consult</a>
+      <nav class="site-nav">
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary">Book a consult</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section id="top" class="section hero">
+    <!-- HERO with neon logo -->
+    <section class="section hero">
       <div class="container grid-2">
         <div class="stack-lg">
           <p class="eyebrow">Infrastructure • Cloud • FinOps</p>
           <h1>Make complex systems feel <em>light</em>.</h1>
-          <p class="lead">
-            We design reliable infrastructure, accelerate cloud adoption, and bring
-            FinOps discipline to your spend — so you ship faster and waste less.
-          </p>
+          <p class="lead">We design reliable infrastructure, accelerate cloud adoption, and bring FinOps discipline to your spend — so you ship faster and waste less.</p>
           <div class="actions">
-            <a href="#contact" class="btn btn-primary">Get a free consult</a>
-            <a href="#services" class="btn btn-ghost">Explore services</a>
+            <a href="/contact.html" class="btn btn-primary">Get a free consult</a>
+            <a href="/services.html" class="btn btn-ghost">Explore services</a>
           </div>
           <div class="hero-metrics">
             <div class="chip">20–40% avg. cloud cost reduction*</div>
@@ -85,24 +63,8 @@
           </div>
           <small class="disclaimer">*Typical results; your mileage may vary.</small>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <!-- Lightweight SVG illustration -->
-          <svg viewBox="0 0 600 500" role="img" aria-label="Abstract cloud & network">
-            <defs>
-              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stop-color="#2B5AA7"/>
-                <stop offset="100%" stop-color="#18B3A6"/>
-              </linearGradient>
-              <filter id="blur"><feGaussianBlur stdDeviation="12" /></filter>
-            </defs>
-            <circle cx="160" cy="160" r="110" fill="url(#g)" filter="url(#blur)" opacity="0.6"/>
-            <circle cx="300" cy="120" r="60" fill="url(#g)" opacity="0.8"/>
-            <circle cx="440" cy="180" r="90" fill="url(#g)" opacity="0.5"/>
-            <g stroke="url(#g)" stroke-width="2" fill="none" opacity="0.7">
-              <polyline points="120,300 260,240 380,300 520,240"/>
-              <polyline points="120,340 260,280 380,340 520,280"/>
-            </g>
-          </svg>
+        <div class="hero-art">
+          <img src="/assets/logo/infralight-logo-neon.png" width="600" height="500" alt="Infralight neon cloud logo" loading="eager" />
         </div>
       </div>
     </section>
@@ -111,203 +73,57 @@
     <section class="section trust">
       <div class="container">
         <p class="trust-label">Trusted by teams that care about uptime & cost</p>
-        <ul class="logo-row" aria-label="Customer logos (sample)">
+        <ul class="logo-row">
           <li>Acme Health</li><li>Nova FinTech</li><li>Globex</li><li>OrbitOps</li><li>DataNest</li>
         </ul>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <h2 class="section-title">Services</h2>
-        <div class="cards">
-          <article class="card">
-            <div class="icon" aria-hidden="true">🧭</div>
-            <h3>Infrastructure Services</h3>
-            <p>High‑availability, secure‑by‑default environments to run your critical workloads.</p>
-            <ul class="check">
-              <li>Infrastructure as Code (Terraform & Pulumi)</li>
-              <li>Kubernetes design, SRE, SLOs</li>
-              <li>Observability (Prometheus, Grafana, Datadog)</li>
-              <li>Zero‑Trust networking & secrets management</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon" aria-hidden="true">☁️</div>
-            <h3>Cloud Services</h3>
-            <p>Migration, modernisation, and platform engineering on AWS, Azure, and GCP.</p>
-            <ul class="check">
-              <li>Landing zones & org governance</li>
-              <li>Serverless & container platforms</li>
-              <li>CI/CD & GitOps workflows</li>
-              <li>Backup, DR, & compliance baselines</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="icon" aria-hidden="true">💸</div>
-            <h3>FinOps</h3>
-            <p>Real‑time cost visibility, unit economics, and continuous savings without surprises.</p>
-            <ul class="check">
-              <li>Cost allocation & tagging strategy</li>
-              <li>Rightsizing & commitment strategy</li>
-              <li>Dashboards & anomaly detection</li>
-              <li>Engineering enablement & guardrails</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="cta-inline">
-          <p>Need something bespoke? We tailor roadmaps to your goals and constraints.</p>
-          <a href="#contact" class="btn btn-primary">Talk to an expert</a>
-        </div>
+    <!-- SERVICES teaser -->
+    <section class="section">
+      <div class="container cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">🧭</div>
+          <h3><a href="/infrastructure.html">Infrastructure Services</a></h3>
+          <p>HA architectures, SRE, observability, Zero-Trust, IaC.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">☁️</div>
+          <h3><a href="/cloud.html">Cloud Services</a></h3>
+          <p>AWS, Azure, GCP — migration, platform engineering, governance.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">💸</div>
+          <h3><a href="/finops.html">FinOps</a></h3>
+          <p>Cost visibility, unit economics, rightsizing, commitments, anomaly detection.</p>
+        </article>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section id="process" class="section alt">
-      <div class="container">
-        <h2 class="section-title">How we work</h2>
-        <ol class="steps">
-          <li><strong>Discover:</strong> Baseline systems, costs, risks, and objectives.</li>
-          <li><strong>Architect:</strong> Blueprints, reference architectures, and runway.</li>
-          <li><strong>Implement:</strong> Iterative delivery with IaC, CI/CD, and guardrails.</li>
-          <li><strong>Optimise:</strong> FinOps & SRE loops for cost, reliability, and speed.</li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- CASE STUDIES -->
-    <section id="cases" class="section">
-      <div class="container">
-        <h2 class="section-title">Case studies</h2>
-        <div class="cards case-cards">
-          <article class="card">
-            <h3>FinTech: 32% cloud savings in 90 days</h3>
-            <p>Introduced chargeback tags, rightsizing, and commitment strategies across AWS org.</p>
-            <ul class="metrics">
-              <li><strong>–32%</strong> monthly spend</li>
-              <li><strong>+99.96%</strong> uptime</li>
-              <li><strong>3</strong> weeks to dashboards</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>HealthTech: Kubernetes modernisation</h3>
-            <p>Moved legacy services to EKS with GitOps, improving deployments and reliability.</p>
-            <ul class="metrics">
-              <li><strong>–45%</strong> lead time</li>
-              <li><strong>0</strong> P1 incidents in 6 months</li>
-              <li><strong>SOC 2</strong> ready controls</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Retail: Faster feature velocity</h3>
-            <p>Built a platform team + paved roads; devs ship with secure defaults.</p>
-            <ul class="metrics">
-              <li><strong>2→10×</strong> deploys/day</li>
-              <li><strong>–38%</strong> MTTR</li>
-              <li><strong>+NPS</strong> from devs</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section alt">
-      <div class="container grid-2">
-        <div>
-          <h2 class="section-title">About Infralight</h2>
-          <p>We’re engineers and advisors who meet you where you are — bringing practical patterns, measurable outcomes, and strong partnership.</p>
-          <ul class="bullets">
-            <li>Certified across AWS, Azure, and GCP</li>
-            <li>Deep Terraform, Kubernetes, and GitOps expertise</li>
-            <li>Security‑first, compliance‑aware delivery</li>
-          </ul>
-        </div>
-        <div class="badges">
-          <span class="badge">AWS</span>
-          <span class="badge">Azure</span>
-          <span class="badge">GCP</span>
-          <span class="badge">Terraform</span>
-          <span class="badge">Kubernetes</span>
-          <span class="badge">FinOps</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <div class="container">
-        <h2 class="section-title">FAQs</h2>
-        <details class="faq">
-          <summary>How do engagements work?</summary>
-          <p>Start with a discovery workshop → roadmap → phased delivery with weekly demos and outcomes tracked.</p>
-        </details>
-        <details class="faq">
-          <summary>Do you work remotely?</summary>
-          <p>Yes. We operate globally with secure remote access and clear comms rituals.</p>
-        </details>
-        <details class="faq">
-          <summary>What’s your pricing model?</summary>
-          <p>Fixed‑scope packages or time & materials. We’ll recommend what fits your goals and risk profile.</p>
-        </details>
-        <details class="faq">
-          <summary>Can you train our team?</summary>
-          <p>Absolutely. We enable your engineers with playbooks, enablement sessions, and office hours.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="container grid-2">
-        <div>
-          <h2 class="section-title">Let’s talk</h2>
-          <p>Tell us about your goals. We’ll propose a pragmatic plan with clear outcomes.</p>
-          <ul class="bullets">
-            <li>Free 30‑minute consult</li>
-            <li>Actionable next steps</li>
-            <li>No pressure</li>
-          </ul>
-        </div>
-        <form id="contact-form" class="card form" aria-label="Contact form">
-          <input type="text" name="company" placeholder="Company" autocomplete="organization" required />
-          <div class="grid-2 tight">
-            <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
-            <input type="email" name="email" placeholder="Work email" autocomplete="email" required />
-          </div>
-          <select name="interest" aria-label="Project type">
-            <option value="infra">Infrastructure</option>
-            <option value="cloud">Cloud</option>
-            <option value="finops">FinOps</option>
-            <option value="other">Other</option>
-          </select>
-          <textarea name="message" rows="5" placeholder="What can we help you achieve?"></textarea>
-          <!-- Honeypot -->
-          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button type="submit" class="btn btn-primary full">Send</button>
-          <p class="form-note">We’ll reply within 1–2 business days. By submitting, you agree to our privacy policy.</p>
-          <p id="form-status" role="status" class="status" aria-live="polite"></p>
-        </form>
+    <!-- CTA -->
+    <section class="section alt">
+      <div class="container cta-inline">
+        <p>Need something bespoke? We tailor roadmaps to your goals and constraints.</p>
+        <a href="/contact.html" class="btn btn-primary">Talk to an expert</a>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <div class="brand compact"><img src="/icons/infralight-logo.svg" alt="Infralight" width="160" height="28"/></div>
-        <p class="muted">United Kingdom • Remote‑first</p>
+        <div class="brand compact">
+          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160" height="28"/>
+        </div>
+        <p class="muted">United Kingdom • Remote-first</p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#cases">Case Studies</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
       </nav>
       <div class="social">
         <a href="#" aria-label="LinkedIn">in</a>
@@ -318,8 +134,6 @@
     <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
   </footer>
 
-  <noscript>
-    <div class="no-js-note container">JavaScript is disabled. Site works, but some enhancements are unavailable.</div>
-  </noscript>
+  <noscript><div class="no-js-note container">JavaScript is disabled. Site works, but some enhancements are unavailable.</div></noscript>
 </body>
 </html>
