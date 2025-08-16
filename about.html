@@ -1,27 +1,104 @@
-<!doctype html><html lang="en-GB"><head>
-    <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <!-- Favicons (SVG-first + Safari pinned tab + PNG fallbacks optional) -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
-    <meta name="theme-color" content="#0A0F1C">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <title>About — Infralight</title>
-    <link rel="canonical" href="https://infralight.co.uk/about.html"/>
-    <link rel="stylesheet" href="/styles.css"/><script defer src="/app.js"></script>
-    </head><body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><div class="container header-inner">…(same header)…</div></header>
-    <main id="main">
-    <section class="section"><div class="container grid-2">
-      <div>
-        <h1>About Infralight</h1>
-        <p class="lead">Engineers and advisors who meet you where you are—bringing practical patterns, measurable outcomes, and strong partnership.</p>
-        <ul class="bullets"><li>Certified across AWS, Azure, and GCP</li><li>Terraform, Kubernetes, GitOps</li><li>Security-first, compliance-aware delivery</li></ul>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Infralight</title>
+  <link rel="canonical" href="https://infralight.co.uk/about.html"/>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
+  <meta name="theme-color" content="#0A0F1C">
+
+  <!-- PWA / Styles / JS -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script defer src="/app.js"></script>
+
+  <!-- Basic OG (optional) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Infralight">
+  <meta property="og:url" content="https://infralight.co.uk/about.html">
+  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo-neon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Infralight home">
+        <picture>
+          <source srcset="/assets/logo/infralight-logo-light.png" media="(prefers-color-scheme: light)">
+          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" class="brand-logo" width="220" height="40" />
+        </picture>
+      </a>
+      <nav class="site-nav">
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a class="active" href="/about.html">About</a>
+        <a href="/contact.html" class="btn btn-primary">Book a consult</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h1>About Infralight</h1>
+          <p class="lead">Engineers and advisors who meet you where you are—bringing practical patterns, measurable outcomes, and strong partnership.</p>
+          <ul class="bullets">
+            <li>Certified across AWS, Azure, and GCP</li>
+            <li>Deep Terraform, Kubernetes, and GitOps expertise</li>
+            <li>Security-first, compliance-aware delivery</li>
+          </ul>
+        </div>
+        <div class="badges">
+          <span class="badge">AWS</span>
+          <span class="badge">Azure</span>
+          <span class="badge">GCP</span>
+          <span class="badge">Terraform</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">FinOps</span>
+        </div>
       </div>
-      <div class="badges"><span class="badge">AWS</span><span class="badge">Azure</span><span class="badge">GCP</span><span class="badge">Terraform</span><span class="badge">Kubernetes</span><span class="badge">FinOps</span></div>
-    </div></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-grid">…</div></footer>
-    </body></html>
-    
+    </section>
+
+    <section class="section alt">
+      <div class="container cta-inline">
+        <p>Want to see how we work in practice? Explore recent outcomes.</p>
+        <a href="/case-studies.html" class="btn btn-primary">View case studies</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand compact">
+          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160" height="28"/>
+        </div>
+        <p class="muted">United Kingdom • Remote-first</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="mailto:hello@infralight.co.uk" aria-label="Email">✉</a>
+      </div>
+    </div>
+    <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
+  </footer>
+
+  <noscript><div class="no-js-note container">JavaScript is disabled. Site works, but some enhancements are unavailable.</div></noscript>
+</body>
+</html>
