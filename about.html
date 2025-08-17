@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>About — Infralight</title>
   <link rel="canonical" href="https://infralight.co.uk/about.html"/>
 
@@ -11,12 +11,12 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
   <meta name="theme-color" content="#0A0F1C">
 
-  <!-- PWA / Styles / JS -->
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- PWA / CSS / JS -->
+  <link rel="manifest" href="/manifest.webmanifest"/>
+  <link rel="stylesheet" href="/styles.css"/>
   <script defer src="/app.js"></script>
 
-  <!-- Basic OG (optional) -->
+  <!-- OG -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="About — Infralight">
   <meta property="og:url" content="https://infralight.co.uk/about.html">
@@ -29,12 +29,14 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Infralight home">
-        <picture>
-          <source srcset="/assets/logo/infralight-logo-light.png" media="(prefers-color-scheme: light)">
-          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" class="brand-logo" width="220" height="40" />
-        </picture>
+        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40"/>
       </a>
-      <nav class="site-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="nav" class="site-nav" aria-label="Primary">
         <a href="/services.html">Services</a>
         <a href="/case-studies.html">Case Studies</a>
         <a class="active" href="/about.html">About</a>
@@ -43,12 +45,13 @@
     </div>
   </header>
 
+  <!-- Main -->
   <main id="main">
     <section class="section">
       <div class="container grid-2">
         <div>
           <h1>About Infralight</h1>
-          <p class="lead">Engineers and advisors who meet you where you are—bringing practical patterns, measurable outcomes, and strong partnership.</p>
+          <p class="lead">Engineers and advisors who meet you where you are — bringing practical patterns, measurable outcomes, and strong partnership.</p>
           <ul class="bullets">
             <li>Certified across AWS, Azure, and GCP</li>
             <li>Deep Terraform, Kubernetes, and GitOps expertise</li>
@@ -78,12 +81,10 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <div class="brand compact">
-          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160" height="28"/>
-        </div>
+        <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160"/>
         <p class="muted">United Kingdom • Remote-first</p>
       </div>
-      <nav class="footer-nav" aria-label="Footer">
+      <nav class="footer-nav">
         <a href="/services.html">Services</a>
         <a href="/case-studies.html">Case Studies</a>
         <a href="/about.html">About</a>
@@ -98,7 +99,5 @@
     </div>
     <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
   </footer>
-
-  <noscript><div class="no-js-note container">JavaScript is disabled. Site works, but some enhancements are unavailable.</div></noscript>
 </body>
 </html>

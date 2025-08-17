@@ -1,40 +1,99 @@
-<!doctype html><html lang="en-GB">
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Privacy — Infralight</title>
+  <link rel="canonical" href="https://infralight.co.uk/privacy.html"/>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
+  <meta name="theme-color" content="#0A0F1C">
+
+  <!-- PWA / CSS / JS -->
+  <link rel="manifest" href="/manifest.webmanifest"/>
+  <link rel="stylesheet" href="/styles.css"/>
+  <script defer src="/app.js"></script>
+
+  <!-- OG -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy — Infralight">
+  <meta property="og:url" content="https://infralight.co.uk/privacy.html">
+  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo-neon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Infralight home">
-        <picture>
-          <source srcset="/assets/logo/infralight-logo-light.png" media="(prefers-color-scheme: light)">
-          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" class="brand-logo" width="220" height="40"/>
-        </picture>
+        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40"/>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
         <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
       </button>
       <nav id="nav" class="site-nav" aria-label="Primary">
-        <a class="active" href="/services.html">Services</a>
+        <a href="/services.html">Services</a>
         <a href="/case-studies.html">Case Studies</a>
         <a href="/about.html">About</a>
-        <a href="/contact.html" class="btn btn-primary">Book a consult</a>
+        <a href="/contact.html">Contact</a>
       </nav>
     </div>
   </header>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><div class="container header-inner">…(same header)…</div></header>
-    <main id="main"><section class="section"><div class="container">
-      <h1>Privacy Policy</h1>
-      <p class="muted">We respect your privacy. This page explains what we collect and why. Replace with your policy text.</p>
-    </div></section></main>
-    <footer class="site-footer">
+
+  <!-- Main -->
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="lead">We respect your privacy and collect only what we need to operate and improve our services.</p>
+
+        <h2>What we collect</h2>
+        <ul class="bullets">
+          <li><strong>Contact submissions:</strong> Name, email, company, and your message.</li>
+          <li><strong>Operational data:</strong> Basic logs for uptime and security.</li>
+        </ul>
+
+        <h2>How we use your data</h2>
+        <ul class="bullets">
+          <li>To respond to enquiries and provide services.</li>
+          <li>To maintain security and improve reliability.</li>
+        </ul>
+
+        <h2>Retention</h2>
+        <p>We keep data only as long as necessary for the purpose it was collected, or as required by law.</p>
+
+        <h2>Your rights</h2>
+        <p>You can request access, correction, or deletion of your data at any time by emailing <a href="mailto:hello@infralight.co.uk">hello@infralight.co.uk</a>.</p>
+
+        <p class="muted tiny">Last updated: <span id="year"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="container footer-grid">
-      <div><img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160"/><p class="muted">United Kingdom • Remote-first</p></div>
+      <div>
+        <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160"/>
+        <p class="muted">United Kingdom • Remote-first</p>
+      </div>
       <nav class="footer-nav">
-        <a href="/services.html">Services</a><a href="/case-studies.html">Case Studies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a>
+        <a href="/services.html">Services</a>
+        <a href="/case-studies.html">Case Studies</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a class="active" href="/privacy.html">Privacy</a>
       </nav>
-      <div class="social"><a href="#">in</a><a href="#">gh</a><a href="mailto:hello@infralight.co.uk">✉</a></div>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="mailto:hello@infralight.co.uk" aria-label="Email">✉</a>
+      </div>
     </div>
     <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
   </footer>
-    </body></html>
-    
+</body>
+</html>
