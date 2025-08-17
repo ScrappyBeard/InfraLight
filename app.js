@@ -8,9 +8,15 @@ if (toggle && nav) {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     nav.classList.toggle('open');
-    document.body.classList.toggle('nav-open');
   });
+
+  // Close menu on link click (better UX)
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
 }
+
 
 // Progressive enhancement: mobile nav CSS (injected so it doesn't flash on desktop)
 const navCss = document.createElement('style');

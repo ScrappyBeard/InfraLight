@@ -164,3 +164,49 @@ h3 { font-size: 1.25rem; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* Fluid type + base */
+h1 { font-size: clamp(1.9rem, 1.3rem + 3.2vw, 3rem); }
+h2 { font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2rem); }
+.container { width: min(100% - 1.5rem, var(--container)); }
+
+/* Header + nav (mobile-first) */
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:.5rem; padding:.8rem 0; }
+.nav-toggle { display:grid; gap:4px; background:transparent; border:0; cursor:pointer; padding:.6rem; }
+.nav-toggle-bar { width:24px; height:2px; background:var(--text); border-radius:2px; }
+.site-nav { position: fixed; inset: 64px 1rem auto 1rem; display:none; background: var(--surface); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:.6rem; box-shadow: var(--shadow); }
+.site-nav a { display:block; padding:.75rem .9rem; border-radius:8px; }
+.site-nav .btn { width:100%; text-align:center; }
+.site-nav.open { display:block; }
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  .nav-toggle { display:none; }
+  .site-nav { position: static; display:flex; background:transparent; border:0; padding:0; box-shadow:none; gap:1rem; }
+  .site-nav a { display:inline-block; padding:.55rem .7rem; }
+  .site-nav .btn { width:auto; }
+}
+
+/* Grids stack nicely on mobile */
+.grid-2 { display:grid; gap: 1.5rem; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .grid-2 { grid-template-columns: 1.1fr .9fr; } }
+
+/* Cards responsive */
+.cards { display:grid; gap:1rem; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+
+/* Hero image behaves on small screens */
+.hero-art img, .hero-art svg { width: 100%; height: auto; }
+
+/* Buttons + inputs are finger-friendly (≥44px) */
+.btn, .form input, .form select, .form textarea { min-height: 44px; }
+
+/* Footer stacks on mobile */
+.footer-grid { display:grid; gap:1rem; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .footer-grid { grid-template-columns: 1fr 1fr auto; } }
+
+/* Avoid layout shift on iOS notch */
+@supports (padding: max(0px)) {
+  body { padding-bottom: max( env(safe-area-inset-bottom), 0px ); }
+}

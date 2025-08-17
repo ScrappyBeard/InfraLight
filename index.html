@@ -3,39 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <!-- Favicons (SVG-first + Safari pinned tab + PNG fallbacks optional) -->
+  <title>Infralight — Infrastructure, Cloud & FinOps Consulting</title>
+  <link rel="canonical" href="https://infralight.co.uk/"/>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
   <meta name="theme-color" content="#0A0F1C">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <title>Infralight — Infrastructure, Cloud & FinOps Consulting</title>
-  <meta name="description" content="Infralight designs reliable infrastructure, modernises in the cloud, and optimises spend with FinOps." />
-  <meta name="theme-color" content="#0A0F1C" />
-  <link rel="canonical" href="https://infralight.co.uk/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Infralight — Infrastructure, Cloud & FinOps Consulting" />
-  <meta property="og:description" content="Design resilient infra, modernise in the cloud, and optimise spend with FinOps." />
-  <meta property="og:url" content="https://infralight.co.uk/" />
-  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo-neon.png" />
-  <meta property="og:locale" content="en_GB" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="manifest" href="/manifest.webmanifest"/>
+  <link rel="stylesheet" href="/styles.css"/>
   <script defer src="/app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Infralight home">
-        <picture>
-          <source srcset="/assets/logo/infralight-logo-light.png" media="(prefers-color-scheme: light)">
-          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" class="brand-logo" width="220" height="40" />
-        </picture>
+        <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="220" height="40"/>
       </a>
-      <nav class="site-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="nav" class="site-nav" aria-label="Primary">
         <a href="/services.html">Services</a>
         <a href="/case-studies.html">Case Studies</a>
         <a href="/about.html">About</a>
@@ -43,97 +30,32 @@
       </nav>
     </div>
   </header>
-
   <main id="main">
-    <!-- HERO with neon logo -->
     <section class="section hero">
       <div class="container grid-2">
-        <div class="stack-lg">
-          <p class="eyebrow">Infrastructure • Cloud • FinOps</p>
+        <div>
           <h1>Make complex systems feel <em>light</em>.</h1>
-          <p class="lead">We design reliable infrastructure, accelerate cloud adoption, and bring FinOps discipline to your spend — so you ship faster and waste less.</p>
+          <p class="lead">We design reliable infrastructure, accelerate cloud adoption, and bring FinOps discipline to your spend.</p>
           <div class="actions">
             <a href="/contact.html" class="btn btn-primary">Get a free consult</a>
             <a href="/services.html" class="btn btn-ghost">Explore services</a>
           </div>
-          <div class="hero-metrics">
-            <div class="chip">20–40% avg. cloud cost reduction*</div>
-            <div class="chip">99.95%+ uptime targets</div>
-            <div class="chip">Weeks to value, not months</div>
-          </div>
-          <small class="disclaimer">*Typical results; your mileage may vary.</small>
         </div>
         <div class="hero-art">
-          <img src="/assets/logo/infralight-logo-neon.png" width="600" height="500" alt="Infralight neon cloud logo" loading="eager" />
+          <img src="/assets/logo/infralight-logo-neon.png" alt="Infralight neon logo" width="600" height="500" loading="lazy"/>
         </div>
-      </div>
-    </section>
-
-    <!-- TRUST -->
-    <section class="section trust">
-      <div class="container">
-        <p class="trust-label">Trusted by teams that care about uptime & cost</p>
-        <ul class="logo-row">
-          <li>Acme Health</li><li>Nova FinTech</li><li>Globex</li><li>OrbitOps</li><li>DataNest</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SERVICES teaser -->
-    <section class="section">
-      <div class="container cards">
-        <article class="card">
-          <div class="icon" aria-hidden="true">🧭</div>
-          <h3><a href="/infrastructure.html">Infrastructure Services</a></h3>
-          <p>HA architectures, SRE, observability, Zero-Trust, IaC.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">☁️</div>
-          <h3><a href="/cloud.html">Cloud Services</a></h3>
-          <p>AWS, Azure, GCP — migration, platform engineering, governance.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">💸</div>
-          <h3><a href="/finops.html">FinOps</a></h3>
-          <p>Cost visibility, unit economics, rightsizing, commitments, anomaly detection.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section alt">
-      <div class="container cta-inline">
-        <p>Need something bespoke? We tailor roadmaps to your goals and constraints.</p>
-        <a href="/contact.html" class="btn btn-primary">Talk to an expert</a>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <div class="brand compact">
-          <img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160" height="28"/>
-        </div>
-        <p class="muted">United Kingdom • Remote-first</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy</a>
+      <div><img src="/assets/logo/infralight-logo-dark.png" alt="Infralight" width="160"/><p class="muted">United Kingdom • Remote-first</p></div>
+      <nav class="footer-nav">
+        <a href="/services.html">Services</a><a href="/case-studies.html">Case Studies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a>
       </nav>
-      <div class="social">
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="GitHub">gh</a>
-        <a href="mailto:hello@infralight.co.uk" aria-label="Email">✉</a>
-      </div>
+      <div class="social"><a href="#">in</a><a href="#">gh</a><a href="mailto:hello@infralight.co.uk">✉</a></div>
     </div>
     <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
   </footer>
-
-  <noscript><div class="no-js-note container">JavaScript is disabled. Site works, but some enhancements are unavailable.</div></noscript>
 </body>
 </html>
