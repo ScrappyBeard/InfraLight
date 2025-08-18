@@ -1,103 +1,49 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Infralight</title>
-  <link rel="canonical" href="https://infralight.co.uk/about.html"/>
-
-  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
-  <meta name="theme-color" content="#0A0F1C">
-
-  <!-- PWA / CSS / JS -->
-  <link rel="manifest" href="/manifest.webmanifest"/>
-  <link rel="stylesheet" href="/styles.css"/>
-  <script defer src="/app.js"></script>
-
-  <!-- OG -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="About — Infralight">
-  <meta property="og:url" content="https://infralight.co.uk/about.html">
-  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo-neon.png">
+  <link rel="stylesheet" href="styles.css?v=20240818-1">
+  <script defer src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About— Infralight</title>
-  <link rel="canonical" href="https://infralight.co.uk/about.html" />
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="brand">
+      <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav id="nav" class="site-nav" aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/case-studies.html">Case Studies</a>
+      <a href="/about.html" class="active">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
-  <meta name="theme-color" content="#0A0F1C">
-
-  <!-- PWA / JS -->
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <script defer src="/app.js"></script>
-
-  <!-- Main stylesheet (cache-busted) -->
-  <link rel="stylesheet" href="/styles.css?v=20240818-1" />
-</head>
-
-
-  <!-- Main -->
-  <main id="main">
-    <section class="section">
-      <div class="container grid-2">
-        <div>
-          <h1>About Infralight</h1>
-          <p class="lead">Engineers and advisors who meet you where you are — bringing practical patterns, measurable outcomes, and strong partnership.</p>
-          <ul class="bullets">
-            <li>Certified across AWS, Azure, and GCP</li>
-            <li>Deep Terraform, Kubernetes, and GitOps expertise</li>
-            <li>Security-first, compliance-aware delivery</li>
-          </ul>
-        </div>
-        <div class="badges">
-          <span class="badge">AWS</span>
-          <span class="badge">Azure</span>
-          <span class="badge">GCP</span>
-          <span class="badge">Terraform</span>
-          <span class="badge">Kubernetes</span>
-          <span class="badge">FinOps</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container cta-inline">
-        <p>Want to see how we work in practice? Explore recent outcomes.</p>
-        <a href="/case-studies.html" class="btn btn-primary">View case studies</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
+<main id="main">
+  <section class="section">
+    <div class="container grid-2">
       <div>
-        <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160"/>
-        <p class="muted">United Kingdom • Remote-first</p>
+        <h1>About Infralight</h1>
+        <p>Infralight is an IT consulting company specialising in infrastructure, cloud services, and FinOps.</p>
+        <p>Founded by industry experts, we work with enterprises to deliver secure, scalable, and cost-optimised technology platforms.</p>
+        <p>Our mission is to empower businesses to innovate confidently with resilient IT foundations.</p>
       </div>
-      <nav class="footer-nav">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
-      <div class="social">
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="GitHub">gh</a>
-        <a href="mailto:info@infralight.co.uk" aria-label="Email">✉</a>
+      <div>
+        <img src="/assets/illustrations/team.svg" alt="Our Team" />
       </div>
     </div>
-    <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
-  </footer>
-</body>
-</html>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="contai

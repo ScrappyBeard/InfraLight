@@ -1,63 +1,64 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Infrastructure Services — Infralight</title>
-  <link rel="canonical" href="https://infralight.co.uk/infrastructure.html"/>
-
-  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2B5AA7">
-  <meta name="theme-color" content="#0A0F1C">
-
-  <link rel="manifest" href="/manifest.webmanifest"/><link rel="stylesheet" href="/styles.css"/><script defer src="/app.js"></script>
+  <link rel="stylesheet" href="styles.css?v=20240818-1">
+  <script defer src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="brand">
+      <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav id="nav" class="site-nav" aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/case-studies.html">Case Studies</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Infralight home">
-        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40"/>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
-        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-      </button>
-      <nav id="nav" class="site-nav" aria-label="Primary">
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html" class="btn btn-primary">Book a consult</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="section"><div class="container">
+<main id="main">
+  <section class="section">
+    <div class="container">
       <h1>Infrastructure Services</h1>
-      <p class="lead">Resilient, secure-by-default foundations for critical workloads.</p>
+      <p>We design, implement, and manage secure, resilient, and scalable infrastructure to keep your business running smoothly.</p>
       <ul class="bullets">
-        <li>Infrastructure as Code (Terraform, Pulumi, Ansible)</li>
-        <li>Kubernetes platform engineering & SRE</li>
-        <li>Observability: metrics, logs, traces; MTTR reduction</li>
-        <li>Resilience: multi-AZ/region HA, DR strategies</li>
-        <li>Zero-Trust networking, secrets management</li>
+        <li>Data centre and hybrid infrastructure design</li>
+        <li>Network architecture and optimisation</li>
+        <li>Infrastructure automation and IaC (Infrastructure as Code)</li>
+        <li>Disaster recovery and business continuity planning</li>
+        <li>Security and compliance monitoring</li>
       </ul>
-    </div></section>
-
-    <section class="section alt"><div class="container cta-inline">
-      <p>Need a platform review? We’ll baseline reliability, security, and cost in one sprint.</p>
-      <a href="/contact.html" class="btn btn-primary">Book a review</a>
-    </div></section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160"/><p class="muted">United Kingdom • Remote-first</p></div>
-      <nav class="footer-nav"><a href="/services.html">Services</a><a href="/case-studies.html">Case Studies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></nav>
-      <div class="social"><a href="#">in</a><a href="#">gh</a><a href="mailto:info@infralight.co.uk" aria-label="Email">✉</a></div>
     </div>
-    <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
-  </footer>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" />
+      <p class="tiny muted">© 2025 Infralight. All rights reserved.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/case-studies.html">Case Studies</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

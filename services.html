@@ -1,21 +1,26 @@
-<!doctype html>
-<html lang="en-GB">
-<!-- ================= HEADER ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Infralight</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=20240818-1">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="container header-inner">
     <a href="/index.html" class="brand">
-      <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40" />
+      <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" />
     </a>
-
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
     </button>
-
     <nav id="nav" class="site-nav" aria-label="Primary">
       <a href="/index.html">Home</a>
-      <a href="/services.html">Services</a>
+      <a href="/services.html" class="active">Services</a>
       <a href="/case-studies.html">Case Studies</a>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
@@ -23,61 +28,43 @@
   </div>
 </header>
 
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Infralight home">
-        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40"/>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
-        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-      </button>
-      <nav id="nav" class="site-nav" aria-label="Primary">
-        <a class="active" href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html" class="btn btn-primary">Book a consult</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main -->
-  <main id="main">
-    <section class="section"><div class="container">
-      <h1>Services</h1>
-      <p class="lead">Pragmatic consulting across infrastructure, cloud, and FinOps.</p>
-    </div></section>
-
-    <section class="section"><div class="container cards">
-      <article class="card">
-        <h3><a href="/infrastructure.html">Infrastructure</a></h3>
-        <p>HA architectures, SRE practices, observability, security, and Infrastructure as Code.</p>
-      </article>
-      <article class="card">
-        <h3><a href="/cloud.html">Cloud</a></h3>
-        <p>AWS, Azure, GCP — migration, platform engineering, governance, CI/CD.</p>
-      </article>
-      <article class="card">
-        <h3><a href="/finops.html">FinOps</a></h3>
-        <p>Cost visibility, rightsizing, commitments, and anomaly detection.</p>
-      </article>
-    </div></section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160"/>
-        <p class="muted">United Kingdom • Remote-first</p>
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="cards">
+        <a class="card" href="/infrastructure.html">
+          <h2>Infrastructure Services</h2>
+          <p>Resilient, secure, and scalable IT infrastructure design and management.</p>
+        </a>
+        <a class="card" href="/cloud.html">
+          <h2>Cloud Services</h2>
+          <p>Cloud migration, architecture, and optimisation tailored to your business.</p>
+        </a>
+        <a class="card" href="/finops.html">
+          <h2>FinOps</h2>
+          <p>Financial operations consulting for cost visibility and control in the cloud.</p>
+        </a>
       </div>
-      <nav class="footer-nav"><a href="/services.html">Services</a><a href="/case-studies.html">Case Studies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></nav>
-      <div class="social"><a href="#">in</a><a href="#">gh</a><a href="mailto:info@infralight.co.uk" aria-label="Email">✉</a></div>
     </div>
-    <div class="container tiny muted">© <span id="year"></span> Infralight. All rights reserved.</div>
-  </footer>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" />
+      <p class="tiny muted">© 2025 Infralight. All rights reserved.</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="/index.html">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/case-studies.html">Case Studies</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
