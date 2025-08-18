@@ -105,11 +105,11 @@ a:hover, a:focus { color: #ffffff; }
   padding: 1.25rem 0;
 }
 
-/* Prevent logo stretching */
+/* Prevent logo stretching & set larger size */
 .site-header .brand img {
   height: auto;
   width: auto;
-  max-height: 40px;   /* comfortable header logo height */
+  max-height: 52px;   /* increased from 40px */
   display: block;
 }
 
@@ -270,11 +270,11 @@ button[type="submit"] { cursor: pointer; }
   padding: 2.5rem 0;
 }
 
-/* Prevent footer logo stretching */
+/* Prevent footer logo stretching & larger size */
 .site-footer img {
   height: auto;
   width: auto;
-  max-height: 36px;   /* comfortable footer logo height */
+  max-height: 44px;   /* increased from 36px */
   display: block;
 }
 
@@ -301,9 +301,6 @@ button[type="submit"] { cursor: pointer; }
 }
 
 /* ===============================
-   Responsive tweaks
+   Case Studies
 ================================ */
-@media (max-width: 480px) {
-  .btn { width: 100%; }
-  .grid-2 { grid-template-columns: 1fr; }
-}
+.case
