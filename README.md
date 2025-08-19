@@ -1,0 +1,2 @@
+﻿# Infralight Website
+Static site.
