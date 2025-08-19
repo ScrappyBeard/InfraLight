@@ -1,1 +1,6 @@
-﻿<svg xmlns='http://www.w3.org/2000/svg'></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="Team">
+  <rect width="600" height="300" fill="#10162F"></rect>
+  <circle cx="180" cy="140" r="40" fill="#2B5AA7"></circle>
+  <circle cx="300" cy="140" r="40" fill="#3F7DE0"></circle>
+  <circle cx="420" cy="140" r="40" fill="#6FA3FF"></circle>
+</svg>

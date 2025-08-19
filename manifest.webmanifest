@@ -1,1 +1,12 @@
-﻿{ 'name':'Infralight','short_name':'Infralight'}
+﻿{
+  "name": "Infralight",
+  "short_name": "Infralight",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0A0F1C",
+  "theme_color": "#0A0F1C",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,2 +1,4 @@
 ﻿User-agent: *
 Allow: /
+
+Sitemap: https://infralight.co.uk/sitemap.xml
