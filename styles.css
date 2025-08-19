@@ -48,7 +48,12 @@ p{margin:0 0 1rem}
   border-bottom:1px solid var(--border);
 }
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;gap:1rem}
-.brand img{height:auto;width:auto;max-height:72px}
+.brand img {
+  height: auto;
+  width: auto;
+  max-height: 90px; /* increase from 72px */
+}
+
 
 /* Nav */
 .site-nav{display:flex;align-items:center;gap:1.25rem}

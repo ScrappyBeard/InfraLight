@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Infralight — Infrastructure, Cloud & FinOps</title>
+  <title>Infralight — IT Consulting</title>
+
+  <!-- Icons / PWA -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Styles & JS -->
   <link rel="stylesheet" href="/styles.css" />
   <script defer src="/app.js"></script>
-  <meta name="description" content="Infralight provides infrastructure, cloud, and FinOps consulting." />
-  <meta property="og:title" content="Infralight — Infrastructure, Cloud & FinOps" />
-  <meta property="og:description" content="Practical consulting to modernize infrastructure and optimize cloud costs." />
+
+  <!-- SEO -->
+  <meta name="description" content="Infralight provides infrastructure, cloud, and FinOps consulting for modern businesses." />
+  <meta property="og:title" content="Infralight — IT Consulting" />
+  <meta property="og:description" content="We help you modernize infrastructure, optimize cloud costs, and implement FinOps strategies." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://infralight.co.uk/" />
   <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo.transparent.png" />
@@ -18,14 +24,19 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="/index.html" class="brand" aria-label="Infralight Home">
         <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40" />
       </a>
+
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
+
       <nav id="nav" class="site-nav" aria-label="Primary">
         <a href="/index.html" aria-current="page" class="active">Home</a>
         <a href="/services.html">Services</a>
@@ -37,52 +48,46 @@
   </header>
 
   <main id="main">
+    <!-- Hero -->
     <section class="section hero">
       <div class="container grid-2">
         <div>
-          <h1>Infrastructure, Cloud & FinOps Consulting</h1>
-          <p class="lead">We help teams modernise platforms, increase resilience, and run cloud cost‑efficiently.</p>
+          <h1>Shaping the Future of Infrastructure & Cloud</h1>
+          <p class="lead">Infralight helps businesses modernize infrastructure, optimize cloud costs, and adopt FinOps strategies.</p>
           <div class="actions">
-            <a href="/services.html" class="btn btn-primary">Explore Services</a>
-            <a href="/contact.html" class="btn btn-ghost">Contact Us</a>
+            <a href="/services.html" class="btn btn-primary">Our Services</a>
+            <a href="/contact.html" class="btn btn-ghost">Get in Touch</a>
           </div>
         </div>
-        <div class="hero-art">
-          <img src="/assets/illustrations/cloud-infra.svg" alt="Cloud Infrastructure Illustration" />
+        <div>
+          <img src="/assets/logo/infralight-logo-neon.png" alt="Infralight Neon Logo" />
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container cards">
-        <a class="card" href="/infrastructure.html">
-          <h2>Infrastructure</h2>
-          <p>Secure-by-default platforms, IaC, observability, SRE, and HA architectures.</p>
-        </a>
-        <a class="card" href="/cloud.html">
-          <h2>Cloud</h2>
-          <p>AWS, Azure, GCP: migration, landing zones, governance, CI/CD, GitOps.</p>
-        </a>
-        <a class="card" href="/finops.html">
-          <h2>FinOps</h2>
-          <p>Cost visibility, rightsizing, commitment strategy, anomaly detection.</p>
-        </a>
+    <!-- Case studies teaser -->
+    <section class="section alt">
+      <div class="container">
+        <h2>Case Studies</h2>
+        <p class="lead">See how we’ve helped businesses reduce cloud costs, modernize infrastructure, and improve engineering efficiency.</p>
+        <a href="/case-studies.html" class="btn btn-primary">View Case Studies</a>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160" />
         <p class="tiny muted">© 2025 Infralight. All rights reserved.</p>
       </div>
-      <nav class="social" aria-label="Social">
-        <a href="https://github.com/infralight" target="_blank" rel="me noopener" aria-label="GitHub">
-          <img src="/assets/icons/github.svg" alt="" width="28" height="28" />
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://github.com/yourgithub" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="/assets/icons/github.svg" alt="GitHub" width="24" height="24" />
         </a>
-        <a href="https://www.linkedin.com/company/infralight" target="_blank" rel="me noopener" aria-label="LinkedIn">
-          <img src="/assets/icons/linkedin.svg" alt="" width="28" height="28" />
+        <a href="https://linkedin.com/company/infralight" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" />
         </a>
       </nav>
     </div>
