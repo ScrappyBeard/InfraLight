@@ -1,95 +1,897 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Infralight — IT Consulting</title>
+  <title>Infralight — Fractional CIO, Multi-Cloud Architecture, AI Platforms &amp; FinOps</title>
+  <meta name="description" content="Infralight is a UK technology advisory and architecture practice providing Fractional CIO leadership, multi-cloud infrastructure across Azure, AWS and GCP, AI platform development, architecture assessments, and FinOps." />
+  <link rel="canonical" href="https://infralight.co.uk/" />
 
-  <!-- Icons / PWA -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-
-  <!-- Styles & JS -->
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/app.js"></script>
-
-  <!-- SEO -->
-  <meta name="description" content="Infralight provides infrastructure, cloud, and FinOps consulting for modern businesses." />
-  <meta property="og:title" content="Infralight — IT Consulting" />
-  <meta property="og:description" content="We help you modernize infrastructure, optimize cloud costs, and implement FinOps strategies." />
+  <!-- Open Graph & Social -->
+  <meta property="og:title" content="Infralight — Executive Technology, Cloud &amp; AI Architecture" />
+  <meta property="og:description" content="Fractional CIO &amp; directorships, Azure/AWS/GCP infrastructure architecture, enterprise AI platforms, architecture assessments, and FinOps." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://infralight.co.uk/" />
-  <meta property="og:image" content="https://infralight.co.uk/assets/logo/infralight-logo.transparent.png" />
+  <meta property="og:image" content="https://infralight.co.uk/assets/images/hero-datacenter.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#151B23" />
+
+  <!-- Icons & Manifest -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles & Logic -->
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Infralight",
+    "url": "https://infralight.co.uk/",
+    "email": "info@infralight.co.uk",
+    "description": "UK IT consulting and technology leadership practice offering Fractional CIO and directorships, Azure/AWS/GCP infrastructure architecture, AI platform development, architecture assessments and designs, and FinOps.",
+    "founder": {
+      "@type": "Person",
+      "name": "Steven Beard",
+      "sameAs": "https://www.linkedin.com/in/beardsteven/"
+    },
+    "areaServed": "United Kingdom",
+    "sameAs": [
+      "https://www.linkedin.com/company/infralight-co-uk"
+    ]
+  }
+  </script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="infralight-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="/index.html" class="brand" aria-label="Infralight Home">
-        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40" />
+      <a href="#top" class="brand-mark" aria-label="Infralight Home">
+        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="5" fill="#151B23"/>
+          <rect x="8" y="8" width="4.5" height="20" fill="#F6F4EF"/>
+          <rect x="15.5" y="23.5" width="12.5" height="4.5" fill="#F6F4EF"/>
+          <polygon points="23,8 28,8 18.5,20.5 13.5,20.5" fill="#E39832"/>
+        </svg>
+        <span>Infralight</span>
+        <span class="brand-sub">infralight.co.uk</span>
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav id="nav" class="site-nav" aria-label="Primary">
-        <a href="/index.html" aria-current="page" class="active">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#practices">Practices</a>
+        <a href="#multi-cloud">Cloud &amp; AI</a>
+        <a href="#outcomes">Outcomes</a>
+        <a href="#finops-estimator">Modeller</a>
+        <a href="#approach">Approach</a>
+        <a href="#leadership">Leadership</a>
       </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary btn-sm header-cta" id="headerBriefingBtn">Book a Briefing</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#practices">Practices <span class="mono">01</span></a>
+      <a href="#multi-cloud">Cloud &amp; AI Architecture <span class="mono">02</span></a>
+      <a href="#outcomes">Selected Outcomes <span class="mono">03</span></a>
+      <a href="#finops-estimator">FinOps Modeller <span class="mono">04</span></a>
+      <a href="#approach">Engagement Approach <span class="mono">05</span></a>
+      <a href="#leadership">Leadership <span class="mono">06</span></a>
+      <a href="#contact" class="btn btn-primary drawer-cta">Book an Executive Briefing</a>
+    </nav>
+  </div>
+
   <main id="main">
-    <!-- Hero -->
-    <section class="section hero">
-      <div class="container grid-2">
-        <div>
-          <h1>Shaping the Future of Infrastructure & Cloud</h1>
-          <p class="lead">Infralight helps businesses modernize infrastructure, optimize cloud costs, and adopt FinOps strategies.</p>
-          <div class="actions">
-            <a href="/services.html" class="btn btn-primary">Our Services</a>
-            <a href="/contact.html" class="btn btn-ghost">Get in Touch</a>
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-top">
+          <div>
+            <div class="eyebrow">Infralight · UK Technology Advisory &amp; Architecture</div>
+            <h1 class="display-title">Clarity for <em>complex</em> infrastructure, cloud, and boardroom technology.</h1>
+          </div>
+          <div class="hero-meta-col">
+            <p class="lead">
+              Executive technology leadership and hands-on architecture—spanning Fractional CIO directorships, Azure, AWS and GCP estates, enterprise AI platforms, independent assessments, and FinOps.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" id="heroContactCta">Request a Briefing</a>
+              <a href="#practices" class="btn-text" id="heroPracticesLink">Explore the five practices &rarr;</a>
+            </div>
           </div>
         </div>
-        <div>
-          <img src="/assets/logo/infralight-logo-neon.png" alt="Infralight Neon Logo" />
+
+        <div class="hero-visual-frame">
+          <div class="hero-visual-media">
+            <picture>
+              <source srcset="assets/images/hero-datacenter.webp" type="image/webp" />
+              <img
+                src="assets/images/hero-datacenter.jpg"
+                alt="Modern enterprise cloud data centre aisle with matte-slate server racks, structured fibre-optic trays, and amber and blue status illumination"
+                width="1800"
+                height="1012"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+          <div class="hero-pillars-bar" role="group" aria-label="Jump to core Infralight practices">
+            <button type="button" class="hero-pillar-btn" data-jump-practice="fractional-cio">
+              <span class="hero-pillar-num">01</span>
+              <span class="hero-pillar-label">Fractional CIO &amp; Directorships</span>
+            </button>
+            <button type="button" class="hero-pillar-btn" data-jump-practice="multi-cloud">
+              <span class="hero-pillar-num">02</span>
+              <span class="hero-pillar-label">Azure, AWS &amp; GCP Architecture</span>
+            </button>
+            <button type="button" class="hero-pillar-btn" data-jump-practice="ai-platforms">
+              <span class="hero-pillar-num">03</span>
+              <span class="hero-pillar-label">AI Platform Development</span>
+            </button>
+            <button type="button" class="hero-pillar-btn" data-jump-practice="assessments">
+              <span class="hero-pillar-num">04</span>
+              <span class="hero-pillar-label">Assessments &amp; Designs</span>
+            </button>
+            <button type="button" class="hero-pillar-btn" data-jump-practice="finops">
+              <span class="hero-pillar-num">05</span>
+              <span class="hero-pillar-label">FinOps &amp; Cloud Economics</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Case studies teaser -->
-    <section class="section alt">
+    <!-- Positioning Strip -->
+    <section class="section-stone posture-strip" aria-label="Practice principles">
       <div class="container">
-        <h2>Case Studies</h2>
-        <p class="lead">See how we’ve helped businesses reduce cloud costs, modernize infrastructure, and improve engineering efficiency.</p>
-        <a href="/case-studies.html" class="btn btn-primary">View Case Studies</a>
+        <div class="posture-grid">
+          <div class="posture-item reveal">
+            <div class="posture-kicker">Board to Build</div>
+            <h2 class="posture-title">Strategy backed by architecture</h2>
+            <p class="posture-desc">Board-ready commercial governance paired directly with production-grade cloud and AI engineering.</p>
+          </div>
+          <div class="posture-item reveal">
+            <div class="posture-kicker">Hyperscaler Neutral</div>
+            <h2 class="posture-title">Azure, AWS &amp; GCP fluency</h2>
+            <p class="posture-desc">Independent design choices aligned to workload resilience, data sovereignty, and commercial terms.</p>
+          </div>
+          <div class="posture-item reveal">
+            <div class="posture-kicker">Pragmatic AI</div>
+            <h2 class="posture-title">Governed enterprise platforms</h2>
+            <p class="posture-desc">Moving AI from isolated experiments to secure, observable, cost-controlled enterprise systems.</p>
+          </div>
+          <div class="posture-item reveal">
+            <div class="posture-kicker">Commercial Discipline</div>
+            <h2 class="posture-title">Measurable unit economics</h2>
+            <p class="posture-desc">Every architectural decision is tethered to reliability, security posture, and FinOps accountability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Five Core Practices -->
+    <section class="section" id="practices">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Core Practices</div>
+            <h2 class="section-title">Five disciplines built to work as one coherent system.</h2>
+          </div>
+          <p class="lead">
+            Select a practice below to inspect deliverables, executive outcomes, and typical engagement structure.
+          </p>
+        </div>
+
+        <div class="practices-layout">
+          <div class="practice-index" role="tablist" aria-label="Infralight consulting practices" id="practiceTabList">
+            <button
+              type="button"
+              class="practice-tab"
+              role="tab"
+              id="practiceTab-fractional-cio"
+              aria-selected="true"
+              aria-controls="practiceDossier"
+              data-practice="fractional-cio"
+            >
+              <span class="practice-num">01</span>
+              <span>
+                <span class="practice-tab-title">Fractional CIO &amp; Directorships</span>
+                <span class="practice-tab-sub">Boardroom leadership, IT strategy &amp; governance</span>
+              </span>
+              <span class="practice-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="practice-tab"
+              role="tab"
+              id="practiceTab-multi-cloud"
+              aria-selected="false"
+              aria-controls="practiceDossier"
+              data-practice="multi-cloud"
+            >
+              <span class="practice-num">02</span>
+              <span>
+                <span class="practice-tab-title">Multi-Cloud Infrastructure Architecture</span>
+                <span class="practice-tab-sub">Azure, AWS &amp; GCP foundations, IaC &amp; SRE</span>
+              </span>
+              <span class="practice-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="practice-tab"
+              role="tab"
+              id="practiceTab-ai-platforms"
+              aria-selected="false"
+              aria-controls="practiceDossier"
+              data-practice="ai-platforms"
+            >
+              <span class="practice-num">03</span>
+              <span>
+                <span class="practice-tab-title">AI Platform Development</span>
+                <span class="practice-tab-sub">Enterprise RAG, LLMOps &amp; sovereign AI guardrails</span>
+              </span>
+              <span class="practice-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="practice-tab"
+              role="tab"
+              id="practiceTab-assessments"
+              aria-selected="false"
+              aria-controls="practiceDossier"
+              data-practice="assessments"
+            >
+              <span class="practice-num">04</span>
+              <span>
+                <span class="practice-tab-title">Architecture Assessments &amp; Designs</span>
+                <span class="practice-tab-sub">Independent reviews, due diligence &amp; HLD/LLD blueprints</span>
+              </span>
+              <span class="practice-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="practice-tab"
+              role="tab"
+              id="practiceTab-finops"
+              aria-selected="false"
+              aria-controls="practiceDossier"
+              data-practice="finops"
+            >
+              <span class="practice-num">05</span>
+              <span>
+                <span class="practice-tab-title">FinOps &amp; Cloud Economics</span>
+                <span class="practice-tab-sub">Unit economics, rightsizing &amp; commitment strategy</span>
+              </span>
+              <span class="practice-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+          <article
+            class="practice-dossier"
+            id="practiceDossier"
+            role="tabpanel"
+            aria-labelledby="practiceTab-fractional-cio"
+            tabindex="0"
+          >
+            <div class="dossier-meta">
+              <span id="dossierIndex">Practice 01 / 05</span>
+              <span class="dossier-cadence" id="dossierCadence">Retained 1–3 days/wk · Interim · Board Seat</span>
+            </div>
+
+            <h3 class="dossier-title" id="dossierTitle">Fractional CIO &amp; Technology Directorships</h3>
+            <p class="dossier-summary" id="dossierSummary">
+              Senior board-level technology leadership for organisations scaling rapidly, navigating transformation, or preparing for investment—bringing executive accountability without the delay or overhead of a permanent hire.
+            </p>
+
+            <div class="dossier-columns">
+              <div>
+                <h4 class="dossier-subheading">Core Deliverables</h4>
+                <ul class="dossier-list" id="dossierDeliverables">
+                  <li>Multi-year IT, cloud &amp; AI strategy aligned to commercial objectives</li>
+                  <li>Board reporting, risk registers, cyber governance &amp; regulatory readiness</li>
+                  <li>Target operating model design, team hiring &amp; engineering leadership coaching</li>
+                  <li>Strategic vendor selection, contract renegotiation &amp; supplier consolidation</li>
+                  <li>Buy-side and sell-side technical due diligence for M&amp;A and PE boards</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="dossier-subheading">Boardroom Impact</h4>
+                <div class="dossier-outcome-box" id="dossierOutcomes">
+                  <div class="dossier-outcome-item">
+                    <strong>Executive Clarity</strong>
+                    Translating technical risk and cloud spend into clear boardroom decisions.
+                  </div>
+                  <div class="dossier-outcome-item">
+                    <strong>Delivery Momentum</strong>
+                    Unblocking stalled programmes and establishing clear accountability.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dossier-footer">
+              <div class="dossier-tags" id="dossierTags">
+                <span class="tech-tag">Board Advisory</span>
+                <span class="tech-tag">IT Operating Models</span>
+                <span class="tech-tag">M&amp;A Due Diligence</span>
+                <span class="tech-tag">Vendor Governance</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" id="dossierEnquireBtn" data-topic="Fractional CIO & Directorships">
+                Discuss this practice &rarr;
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark Band: Multi-Cloud & AI Technical Blueprint -->
+    <section class="section band-dark" id="multi-cloud">
+      <div class="container">
+        <div class="cloud-grid">
+          <div class="reveal">
+            <div class="eyebrow">Multi-Cloud &amp; AI Engineering</div>
+            <h2 class="section-title">One architectural standard across Azure, AWS, GCP, and AI.</h2>
+            <p class="lead">
+              Most enterprises operate across more than one cloud—through acquisition, regulatory boundaries, or best-of-breed AI services. Infralight designs coherent, repeatable foundations regardless of hyperscaler.
+            </p>
+
+            <div class="cloud-tabs" role="tablist" aria-label="Cloud and AI platform blueprints" id="cloudTabList">
+              <button type="button" class="cloud-tab" role="tab" id="cloudTab-azure" aria-selected="true" aria-controls="cloudBlueprint" data-cloud="azure">Microsoft Azure</button>
+              <button type="button" class="cloud-tab" role="tab" id="cloudTab-aws" aria-selected="false" aria-controls="cloudBlueprint" data-cloud="aws">AWS</button>
+              <button type="button" class="cloud-tab" role="tab" id="cloudTab-gcp" aria-selected="false" aria-controls="cloudBlueprint" data-cloud="gcp">Google Cloud</button>
+              <button type="button" class="cloud-tab" role="tab" id="cloudTab-ai" aria-selected="false" aria-controls="cloudBlueprint" data-cloud="ai">Enterprise AI</button>
+            </div>
+
+            <div class="cloud-blueprint-card" id="cloudBlueprint" role="tabpanel" aria-labelledby="cloudTab-azure">
+              <div class="cloud-bp-header">
+                <h3 class="cloud-bp-title" id="bpTitle">Microsoft Azure Enterprise Architecture</h3>
+                <span class="cloud-bp-code" id="bpCode">CAF · AKS · AI FOUNDRY</span>
+              </div>
+              <div class="cloud-bp-rows" id="bpRows">
+                <div class="cloud-bp-row">
+                  <span class="cloud-bp-label">Landing Zone</span>
+                  <span class="cloud-bp-value">Cloud Adoption Framework management groups, Azure Policy guardrails, Hub-and-Spoke / Virtual WAN &amp; Entra ID Zero Trust.</span>
+                </div>
+                <div class="cloud-bp-row">
+                  <span class="cloud-bp-label">Platform &amp; IaC</span>
+                  <span class="cloud-bp-value">Modular Terraform &amp; Bicep pipelines, hardened AKS clusters, Azure Container Apps, and GitOps release workflows.</span>
+                </div>
+                <div class="cloud-bp-row">
+                  <span class="cloud-bp-label">AI &amp; Data Plane</span>
+                  <span class="cloud-bp-value">Private Azure AI Foundry &amp; Azure OpenAI endpoints, AI Search vector grounding, Microsoft Fabric &amp; private VNet integration.</span>
+                </div>
+                <div class="cloud-bp-row">
+                  <span class="cloud-bp-label">FinOps &amp; Resilience</span>
+                  <span class="cloud-bp-value">Azure Hybrid Benefit, Reservations &amp; Savings Plans optimisation, zone-redundant HA/DR and Defender for Cloud posture.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <figure class="editorial-figure reveal">
+            <div class="editorial-figure-frame">
+              <picture>
+                <source srcset="assets/images/cloud-ai-hardware.webp" type="image/webp" />
+                <img
+                  src="assets/images/cloud-ai-hardware.jpg"
+                  alt="Close-up of enterprise AI compute server hardware and neatly bundled amber and blue fibre-optic network transceivers inside a rack"
+                  width="1400"
+                  height="1050"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <figcaption class="editorial-figcaption">
+              <span>FIG. 01 — CLOUD &amp; AI COMPUTE FABRIC</span>
+              <span>TERRAFORM · K8S · GITOPS · ZERO TRUST</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Outcomes / Case Studies -->
+    <section class="section" id="outcomes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Selected Outcomes</div>
+            <h2 class="section-title">Practical architecture measured in commercial results.</h2>
+          </div>
+          <p class="lead">
+            Representative engagement outcomes across regulated financial services, healthcare technology, and multi-channel retail.
+          </p>
+        </div>
+
+        <div class="outcomes-grid">
+          <article class="outcome-card reveal">
+            <div>
+              <div class="outcome-top">
+                <span class="outcome-sector">FinTech</span>
+                <span>Case 01 · FinOps</span>
+              </div>
+              <div class="outcome-metric">32%</div>
+              <h3 class="outcome-title">Cloud Spend Reduction Across AWS</h3>
+              <p class="outcome-desc">
+                Implemented org-wide chargeback tagging, automated rightsizing, and a structured Savings Plan and Reserved Instance commitment strategy across a multi-account AWS organisation—restoring unit-economic clarity for finance and engineering.
+              </p>
+            </div>
+            <div class="outcome-foot">AWS Organisation · Chargeback · Commitment Strategy</div>
+          </article>
+
+          <article class="outcome-card reveal">
+            <div>
+              <div class="outcome-top">
+                <span class="outcome-sector">HealthTech</span>
+                <span>Case 02 · Modernisation</span>
+              </div>
+              <div class="outcome-metric">EKS + GitOps</div>
+              <h3 class="outcome-title">Kubernetes Platform Modernisation</h3>
+              <p class="outcome-desc">
+                Architected and led migration to hardened Amazon EKS paired with declarative GitOps workflows and unified observability—materially improving platform resilience, deployment velocity, and audit compliance.
+              </p>
+            </div>
+            <div class="outcome-foot">Amazon EKS · GitOps · SRE &amp; Observability</div>
+          </article>
+
+          <article class="outcome-card reveal">
+            <div>
+              <div class="outcome-top">
+                <span class="outcome-sector">Retail</span>
+                <span>Case 03 · Platform</span>
+              </div>
+              <div class="outcome-metric">Golden Paths</div>
+              <h3 class="outcome-title">Internal Platform Engineering</h3>
+              <p class="outcome-desc">
+                Designed paved roads and reusable Infrastructure as Code modules with secure-by-default guardrails, enabling product engineering teams to ship new services rapidly without compromising governance or resilience.
+              </p>
+            </div>
+            <div class="outcome-foot">Terraform · Landing Zones · Security-First Defaults</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive FinOps & Architecture Value Modeller -->
+    <section class="section section-stone" id="finops-estimator">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Interactive Diagnostic</div>
+            <h2 class="section-title">Model your FinOps &amp; architecture opportunity.</h2>
+          </div>
+          <p class="lead">
+            Estimate indicative annual cloud savings and identify the right starting engagement based on your current spend, cloud footprint, and governance maturity.
+          </p>
+        </div>
+
+        <div class="modeller-panel reveal">
+          <div class="modeller-controls">
+            <div class="control-group">
+              <div class="control-header">
+                <label class="control-label" for="spendSlider">Monthly Cloud &amp; AI Infrastructure Spend</label>
+                <span class="control-readout" id="spendReadout">&pound;75,000 / mo</span>
+              </div>
+              <input
+                type="range"
+                id="spendSlider"
+                class="range-input"
+                min="10"
+                max="500"
+                step="5"
+                value="75"
+                aria-valuetext="£75,000 per month"
+              />
+              <div class="range-scale">
+                <span>&pound;10k</span>
+                <span>&pound;150k</span>
+                <span>&pound;300k</span>
+                <span>&pound;500k+</span>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label" id="footprintLabel">Cloud Estate Footprint</span>
+              <div class="segmented-options" role="group" aria-labelledby="footprintLabel" id="footprintGroup">
+                <button type="button" class="seg-btn" data-footprint="single" aria-pressed="false">Single Cloud</button>
+                <button type="button" class="seg-btn" data-footprint="multi" aria-pressed="true">Multi-Cloud</button>
+                <button type="button" class="seg-btn" data-footprint="hybrid" aria-pressed="false">Hybrid + On-Prem</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label" id="maturityLabel">Current FinOps &amp; Architecture Governance</span>
+              <div class="segmented-options" role="group" aria-labelledby="maturityLabel" id="maturityGroup">
+                <button type="button" class="seg-btn" data-maturity="low" aria-pressed="true">Ad-hoc / Unaudited</button>
+                <button type="button" class="seg-btn" data-maturity="mid" aria-pressed="false">Developing</button>
+                <button type="button" class="seg-btn" data-maturity="high" aria-pressed="false">Established</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label">Strategic Priorities</span>
+              <div class="priority-checks" id="priorityChecks">
+                <label class="priority-chip">
+                  <input type="checkbox" value="FinOps cost reduction" checked />
+                  <span>FinOps Optimisation</span>
+                </label>
+                <label class="priority-chip">
+                  <input type="checkbox" value="Architecture assessment & target design" checked />
+                  <span>Architecture Assessment</span>
+                </label>
+                <label class="priority-chip">
+                  <input type="checkbox" value="Enterprise AI platform build" />
+                  <span>AI Platform Readiness</span>
+                </label>
+                <label class="priority-chip">
+                  <input type="checkbox" value="Fractional CIO / board leadership" />
+                  <span>Fractional CIO</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="modeller-output" aria-live="polite">
+            <div>
+              <div class="output-kicker">Indicative Annual Opportunity</div>
+              <div class="output-figure" id="savingsRange">&pound;216k – &pound;306k</div>
+              <p class="output-caption" id="savingsCaption">
+                Estimated 24%–34% run-rate optimisation on &pound;900k annual spend across rightsizing, commitments, and architecture simplification.
+              </p>
+            </div>
+
+            <div class="output-bars">
+              <div class="bar-item">
+                <div class="bar-head">
+                  <span>Rightsizing &amp; Idle Elimination</span>
+                  <span id="barRightsizeVal">~11%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" id="barRightsize" style="width: 48%"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-head">
+                  <span>Commitments (RIs / Savings Plans / EA)</span>
+                  <span id="barCommitVal">~10%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill is-blue" id="barCommit" style="width: 44%"></div></div>
+              </div>
+              <div class="bar-item">
+                <div class="bar-head">
+                  <span>Architecture &amp; Data-Transfer Efficiency</span>
+                  <span id="barArchVal">~8%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill" id="barArch" style="width: 34%"></div></div>
+              </div>
+            </div>
+
+            <div class="recommendation-box">
+              <div class="recommendation-label">Recommended Starting Engagement</div>
+              <h3 class="recommendation-title" id="recTitle">4-Week Architecture &amp; FinOps Diagnostic</h3>
+              <p class="recommendation-note" id="recNote">
+                Rapid multi-cloud audit delivering a board-ready savings business case, quick-win execution plan, and target landing-zone governance blueprint.
+              </p>
+            </div>
+
+            <button type="button" class="btn btn-amber" id="modellerCarryBtn">
+              Bring these figures to a briefing &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engagement Approach -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="eyebrow">Methodology</div>
+            <h2 class="section-title">How Infralight works—without creating dependency.</h2>
+          </div>
+          <p class="lead">
+            A calm, disciplined cadence that aligns the executive board, leaves behind clean documentation and Infrastructure as Code, and strengthens your internal engineering capability.
+          </p>
+        </div>
+
+        <div class="method-grid reveal">
+          <div class="method-step">
+            <span class="method-num">01 / ILLUMINATE</span>
+            <h3 class="method-title">Discover &amp; Assess</h3>
+            <p class="method-desc">
+              Rapid, candid review of your architecture, cloud bill, delivery bottlenecks, security posture, and commercial priorities—establishing an objective baseline.
+            </p>
+          </div>
+          <div class="method-step">
+            <span class="method-num">02 / ARCHITECT</span>
+            <h3 class="method-title">Blueprint &amp; Decide</h3>
+            <p class="method-desc">
+              Clear High-Level and Low-Level Designs, Architecture Decision Records, and FinOps models that link technical trade-offs directly to business risk and cost.
+            </p>
+          </div>
+          <div class="method-step">
+            <span class="method-num">03 / ENABLE</span>
+            <h3 class="method-title">Build &amp; Modernise</h3>
+            <p class="method-desc">
+              Hands-on implementation of landing zones, Terraform/GitOps pipelines, AI platforms, and engineering guardrails alongside your internal teams.
+            </p>
+          </div>
+          <div class="method-step">
+            <span class="method-num">04 / GOVERN</span>
+            <h3 class="method-title">Embed &amp; Advise</h3>
+            <p class="method-desc">
+              Ongoing Fractional CIO directorship, quarterly Well-Architected reviews, and live FinOps cadence so gains compound long after initial delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section section-stone" id="leadership">
+      <div class="container">
+        <div class="leadership-grid">
+          <div class="leadership-media reveal">
+            <div class="leadership-frame">
+              <picture>
+                <source srcset="assets/images/cio-workspace.webp" type="image/webp" />
+                <img
+                  src="assets/images/cio-workspace.jpg"
+                  alt="Executive CIO and cloud architect desk overlooking London with cloud network topology diagrams, FinOps charts on a laptop, and system architecture sketches"
+                  width="1400"
+                  height="1050"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="leadership-caption">
+              <span>INFRALIGHT PRINCIPAL PRACTICE</span>
+              <span>UNITED KINGDOM</span>
+            </div>
+          </div>
+
+          <div class="leadership-copy reveal">
+            <div class="eyebrow">Principal Leadership</div>
+            <h2 class="section-title">Steven Beard</h2>
+            <div class="leadership-role">Founder · Fractional CIO &amp; Principal Architect</div>
+
+            <p>
+              Infralight was founded on a straightforward conviction: organisations achieve far better technology outcomes when boardroom direction and deep infrastructure architecture are connected rather than siloed across separate agencies.
+            </p>
+            <p>
+              Working directly with CEOs, CFOs, Private Equity boards, and Heads of Engineering, Steven brings independent technical leadership across Microsoft Azure, AWS, and Google Cloud—combining pragmatic architecture design, governed AI platform delivery, and FinOps discipline. Every engagement is principal-led from first assessment through to operational handover.
+            </p>
+
+            <div class="principles-list">
+              <div class="principle-item">
+                <strong>Principal-Led Delivery</strong>
+                <span>Direct access to senior executive and architectural leadership—never delegated to junior benches.</span>
+              </div>
+              <div class="principle-item">
+                <strong>Vendor-Independent Advice</strong>
+                <span>Zero hyperscaler resale bias; recommendations follow workload fit, compliance, and total cost.</span>
+              </div>
+              <div class="principle-item">
+                <strong>Security &amp; Compliance First</strong>
+                <span>Zero-Trust foundations, policy-as-code, and audit-ready governance built into every blueprint.</span>
+              </div>
+              <div class="principle-item">
+                <strong>Plain-Spoken Clarity</strong>
+                <span>Clear trade-offs, crisp board packs, and maintainable code your teams can own with confidence.</span>
+              </div>
+            </div>
+
+            <div class="leadership-links">
+              <a
+                href="https://www.linkedin.com/in/beardsteven/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+                id="stevenLinkedinBtn"
+              >
+                Steven Beard on LinkedIn &nearr;
+              </a>
+              <a
+                href="https://canva.link/wa63s3kuzyhk8p3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline btn-sm"
+                id="stevenCvBtn"
+              >
+                View Executive CV &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Executive Briefing Section -->
+    <section class="section band-dark" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="eyebrow">Start a Conversation</div>
+            <h2 class="section-title">Schedule a confidential briefing.</h2>
+            <p class="lead">
+              Whether you need a Fractional CIO at the board table, an independent assessment of an Azure, AWS or GCP estate, an enterprise AI platform blueprint, or immediate FinOps control—let’s talk directly.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-row">
+                <span class="contact-row-label">Direct Email</span>
+                <div class="contact-email-wrap">
+                  <a href="mailto:info@infralight.co.uk" class="contact-email-link">info@infralight.co.uk</a>
+                  <button type="button" class="copy-email-btn" id="copyEmailBtn" data-email="info@infralight.co.uk">Copy</button>
+                </div>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-row-label">Practice Presence</span>
+                <div class="leadership-links" style="margin-top: 0.35rem;">
+                  <a
+                    href="https://www.linkedin.com/company/infralight-co-uk"
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    Infralight LinkedIn &nearr;
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/beardsteven/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    Steven Beard &nearr;
+                  </a>
+                </div>
+              </div>
+
+              <p class="contact-note">
+                Direct response within one UK business day. Mutual NDAs can be executed prior to sharing architecture diagrams, cloud billing exports, or strategic roadmaps.
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal">
+            <form
+              action="https://formspree.io/f/myzpaeln"
+              method="POST"
+              class="form-grid"
+              id="enquiryForm"
+              novalidate
+            >
+              <input type="hidden" name="_next" value="https://infralight.co.uk/thanks.html" />
+              <input type="hidden" name="_subject" value="New executive enquiry via infralight.co.uk" />
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="enquiryName">Full Name</label>
+                  <input id="enquiryName" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" required />
+                </div>
+                <div class="form-field">
+                  <label for="enquiryEmail">Work Email</label>
+                  <input id="enquiryEmail" name="email" type="email" autocomplete="email" placeholder="alex@company.co.uk" required />
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="enquiryOrg">Organisation</label>
+                  <input id="enquiryOrg" name="organisation" type="text" autocomplete="organization" placeholder="Company or Board" />
+                </div>
+                <div class="form-field">
+                  <label for="enquiryTopic">Primary Area of Focus</label>
+                  <select id="enquiryTopic" name="topic">
+                    <option value="Fractional CIO & Directorships">Fractional CIO &amp; Directorships</option>
+                    <option value="Multi-Cloud Infrastructure Architecture">Multi-Cloud Architecture (Azure / AWS / GCP)</option>
+                    <option value="AI Platform Development">AI Platform Development</option>
+                    <option value="Architecture Assessments & Designs">Architecture Assessments &amp; Designs</option>
+                    <option value="FinOps & Cloud Economics">FinOps &amp; Cloud Economics</option>
+                    <option value="General Executive Advisory">General Executive Advisory</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="enquiryMessage">Brief Context &amp; Objectives</label>
+                <textarea
+                  id="enquiryMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Share a brief overview of your infrastructure, cloud estate, timeline, or leadership requirement..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Honeypot -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="enquiryWebsite">Website</label>
+                <input id="enquiryWebsite" name="company" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary" id="enquirySubmitBtn">Send Briefing Request</button>
+                <p class="form-privacy">Confidential · Direct to Steven Beard</p>
+              </div>
+
+              <p class="form-status" id="enquiryStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160" />
-      <p class="tiny muted">© 2025 Infralight. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#top" class="brand-mark footer-brand" aria-label="Infralight Home">
+            <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="5" fill="#1D2530" stroke="rgba(246,244,239,0.2)"/>
+              <rect x="8" y="8" width="4.5" height="20" fill="#F6F4EF"/>
+              <rect x="15.5" y="23.5" width="12.5" height="4.5" fill="#F6F4EF"/>
+              <polygon points="23,8 28,8 18.5,20.5 13.5,20.5" fill="#E39832"/>
+            </svg>
+            <span>Infralight</span>
+          </a>
+          <p class="footer-tagline">
+            Independent UK technology advisory and architecture practice—bringing clarity to Fractional CIO leadership, multi-cloud infrastructure, enterprise AI platforms, and FinOps.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Practices</h3>
+          <ul class="footer-links">
+            <li><a href="#practices" data-jump-practice="fractional-cio">Fractional CIO &amp; Directorships</a></li>
+            <li><a href="#practices" data-jump-practice="multi-cloud">Azure, AWS &amp; GCP Architecture</a></li>
+            <li><a href="#practices" data-jump-practice="ai-platforms">AI Platform Development</a></li>
+            <li><a href="#practices" data-jump-practice="assessments">Architecture Assessments &amp; Designs</a></li>
+            <li><a href="#practices" data-jump-practice="finops">FinOps &amp; Cloud Economics</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:info@infralight.co.uk">info@infralight.co.uk</a></li>
+            <li><a href="https://www.linkedin.com/company/infralight-co-uk" target="_blank" rel="me noopener noreferrer">Infralight on LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/beardsteven/" target="_blank" rel="noopener noreferrer">Steven Beard on LinkedIn</a></li>
+            <li><a href="https://canva.link/wa63s3kuzyhk8p3" target="_blank" rel="noopener noreferrer">Executive CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Infralight. All rights reserved.</span>
+        <span>infralight.co.uk &middot; United Kingdom</span>
+      </div>
     </div>
-
-    <!-- Right side: LinkedIn only -->
-    <nav class="social" aria-label="Social">
-      <a href="https://www.linkedin.com/company/infralight-co-uk" target="_blank" rel="me noopener" aria-label="LinkedIn">
-        <img src="/assets/icons/linkedin.svg" alt="" />
-      </a>
-    </nav>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>

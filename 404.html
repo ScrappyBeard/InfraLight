@@ -1,62 +1,39 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>404 — Page Not Found</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css" />
-  <script defer src="/app.js"></script>
+  <title>Page Not Found — Infralight</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="infralight-page">
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/index.html" class="brand" aria-label="Infralight Home">
-        <img src="/assets/logo/infralight-bulb-transparent.png" alt="Infralight" width="220" height="40" />
+      <a href="index.html" class="brand-mark" aria-label="Infralight Home">
+        <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="5" fill="#151B23"/>
+          <rect x="8" y="8" width="4.5" height="20" fill="#F6F4EF"/>
+          <rect x="15.5" y="23.5" width="12.5" height="4.5" fill="#F6F4EF"/>
+          <polygon points="23,8 28,8 18.5,20.5 13.5,20.5" fill="#E39832"/>
+        </svg>
+        <span>Infralight</span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-      </button>
-      <nav id="nav" class="site-nav" aria-label="Primary">
-        <a href="/index.html">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/case-studies.html">Case Studies</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
     </div>
   </header>
-
-  <main id="main">
-    <section class="section">
-      <div class="container">
-        <h1>404 — Page not found</h1>
-        <p>We couldn’t find that page. Try the home page or one of the sections below.</p>
-        <p>
-          <a class="btn btn-primary" href="/index.html">Back to home</a>
-          <a class="btn btn-ghost" href="/services.html">Explore services</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="/assets/logo/infralight-logo.transparent.png" alt="Infralight" width="160" />
-      <p class="tiny muted">© 2025 Infralight. All rights reserved.</p>
+  <main class="section">
+    <div class="container" style="max-width: 720px;">
+      <div class="eyebrow">404 · Not Found</div>
+      <h1 class="section-title">That page has moved or doesn’t exist.</h1>
+      <p class="lead" style="margin-bottom: 2rem;">
+        Infralight’s practices, cloud &amp; AI blueprints, selected outcomes, and briefing contact are all available on our main site.
+      </p>
+      <a href="index.html" class="btn btn-primary">Go to infralight.co.uk &rarr;</a>
     </div>
-
-    <!-- Right side: LinkedIn only -->
-    <nav class="social" aria-label="Social">
-      <a href="https://www.linkedin.com/company/infralight-co-uk" target="_blank" rel="me noopener" aria-label="LinkedIn">
-        <img src="/assets/icons/linkedin.svg" alt="" />
-      </a>
-    </nav>
-  </div>
-</footer>
-
+  </main>
 </body>
 </html>

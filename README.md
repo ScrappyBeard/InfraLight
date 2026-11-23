@@ -1,18 +1,15 @@
-﻿# Infralight Website
+# Infralight Website (`infralight.co.uk`)
 
-Static site for Infralight (Infrastructure, Cloud & FinOps consulting).
+Production-ready static website for **Infralight**, built with semantic HTML5, Vanilla CSS, and zero-dependency JavaScript — ready for immediate hosting on GitHub Pages, Cloudflare Pages, or Netlify.
 
-- Domain: `infralight.co.uk` (GitHub Pages, CNAME set)
-- Contact: info@infralight.co.uk
-- Formspree: https://formspree.io/f/myzpaeln
+## Highlights
+- **Five Core Practices Explorer**: Fractional CIO & Directorships, Multi-Cloud Infrastructure Architecture (Azure, AWS & GCP), AI Platform Development, Architecture Assessments & Designs, and FinOps & Cloud Economics.
+- **Multi-Cloud & AI Blueprint Matrix**: Interactive technical architecture reference across Azure, AWS, GCP, and Enterprise AI.
+- **Interactive FinOps & Architecture Opportunity Modeller**: Calculates indicative run-rate savings and carries figures straight into the executive briefing form.
+- **Contact & Formspree Integration**: Connected to `https://formspree.io/f/myzpaeln` with honeypot spam protection, AJAX submission, and `thanks.html` fallback.
+- **SEO & Performance**: JSON-LD structured data, Open Graph metadata, responsive WebP + JPEG photography, `sitemap.xml`, `robots.txt`, and `CNAME` pre-configured for `infralight.co.uk`.
 
-## Structure
-- Pages: `index`, `services`, `infrastructure`, `cloud`, `finops`, `case-studies`, `about`, `contact`, `privacy`, `thanks`, `404`
-- Assets: `/assets/logo/`, `/assets/icons/`, `/assets/illustrations/`
-- Styles: `/styles.css`
-- JS: `/app.js`
-- SEO/PWA: `favicon.svg`, `manifest.webmanifest`, `robots.txt`, `sitemap.xml`
-
-## Notes
-- All paths are root-relative (`/...`) for consistency on the apex domain.
-- Footer shows only GitHub and LinkedIn icons per design.
+## Deploying to GitHub Pages
+1. Push the contents of this directory to your GitHub Pages repository (the `CNAME` file is already set to `infralight.co.uk`).
+2. In GitHub repository **Settings → Pages**, enable deployment from your main branch root (`/`) and verify **Enforce HTTPS**.
+3. Ensure your DNS records for `infralight.co.uk` point to GitHub Pages (`A` records for the apex domain and `CNAME` for `www`).
