@@ -738,6 +738,20 @@
       });
     }
 
+    /* 10. Pre-fill contact form from query parameters (e.g. from leader profile pages) */
+    if (enquiryTopic || enquiryMessage) {
+      const params = new URLSearchParams(window.location.search);
+      const focusParam = params.get("focus");
+      const leaderParam = params.get("leader");
+      if (focusParam && enquiryTopic) {
+        const hasOpt = Array.from(enquiryTopic.options).some((o) => o.value === focusParam);
+        if (hasOpt) enquiryTopic.value = focusParam;
+      }
+      if (leaderParam && enquiryMessage && !enquiryMessage.value.trim()) {
+        enquiryMessage.value = `Briefing enquiry regarding ${leaderParam}:\n\n`;
+      }
+    }
+
     /* 9. Subtle Scroll Reveal */
     const reveals = Array.from(document.querySelectorAll(".reveal"));
     if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {

@@ -1590,6 +1590,224 @@ textarea {
   gap: 0.85rem;
 }
 
+.leaders-grid {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: clamp(2.5rem, 4.5vw, 3.5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--rule-strong);
+}
+
+@media (min-width: 820px) {
+  .leaders-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.leader-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius-md);
+  padding: clamp(1.65rem, 3vw, 2.35rem);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  transition: transform 0.25s var(--ease-out-expo), box-shadow 0.25s ease, border-color 0.22s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elevated);
+  border-color: var(--rule-strong);
+}
+
+.leader-card-head {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.leader-monogram {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-ink);
+  color: var(--text-on-dark);
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.leader-monogram::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--accent-amber-bright);
+}
+
+.leader-card-name {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.2rem;
+  color: var(--text-primary);
+}
+
+.leader-card-role {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-blue);
+}
+
+.leader-card-bio {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 1.15rem 0 1.25rem;
+}
+
+.leader-card-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--rule-light);
+}
+
+/* Dedicated Executive Profile Page */
+.profile-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.profile-breadcrumb:hover {
+  color: var(--accent-blue);
+}
+
+.profile-hero-grid {
+  display: grid;
+  gap: clamp(2rem, 4.5vw, 4rem);
+  align-items: start;
+}
+
+@media (min-width: 920px) {
+  .profile-hero-grid {
+    grid-template-columns: 1.25fr 0.75fr;
+  }
+}
+
+.profile-facts-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--rule-light);
+  border-radius: var(--radius-md);
+  padding: clamp(1.5rem, 2.8vw, 2.15rem);
+  box-shadow: var(--shadow-subtle);
+}
+
+.profile-facts-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.profile-facts-list {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.profile-fact-row {
+  display: grid;
+  gap: 0.2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.profile-fact-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.profile-fact-row dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.profile-fact-row dd {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.profile-mandates-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.mandate-card {
+  background-color: var(--bg-ink-elev);
+  border: 1px solid var(--rule-dark);
+  border-radius: var(--radius-md);
+  padding: 1.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.mandate-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-amber-bright);
+}
+
+.mandate-title {
+  font-family: var(--font-serif);
+  font-size: 1.38rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--text-on-dark);
+}
+
+.mandate-desc {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* ==========================================================================
    Contact & Executive Briefing
    ========================================================================== */
