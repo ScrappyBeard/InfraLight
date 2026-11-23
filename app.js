@@ -34,29 +34,29 @@
     },
     "multi-cloud": {
       index: "Practice 02 / 05",
-      cadence: "Architecture Programme · Hands-On Delivery",
-      title: "Multi-Cloud Infrastructure Architecture",
-      topic: "Multi-Cloud Infrastructure Architecture",
+      cadence: "Azure Specialist · GCP Delivery",
+      title: "Azure & GCP Infrastructure Architecture",
+      topic: "Azure & GCP Infrastructure Architecture",
       summary:
-        "Resilient, secure-by-default foundations across Microsoft Azure, Amazon Web Services, and Google Cloud Platform—engineered as repeatable code to accelerate delivery while hardening availability and security.",
+        "Resilient, secure-by-default enterprise foundations centred on Microsoft Azure—supported by Google Cloud Platform (GCP) capability—engineered as repeatable code to accelerate delivery while hardening availability and security.",
       deliverables: [
-        "Enterprise Landing Zones & multi-account / subscription governance across Azure, AWS & GCP",
-        "Infrastructure as Code (Terraform, OpenTofu, Pulumi, Ansible) & GitOps automation",
-        "Kubernetes platform engineering (AKS, EKS, GKE), SRE practices & observability",
-        "High Availability, multi-region Disaster Recovery, Zero-Trust networking & identity",
-        "Legacy estate modernisation, cloud migration & hybrid connectivity design"
+        "Azure Cloud Adoption Framework (CAF) Enterprise-Scale Landing Zones, Management Groups & Policy guardrails",
+        "Infrastructure as Code (Terraform, Bicep, OpenTofu, Ansible) & declarative GitOps automation",
+        "Kubernetes platform engineering (Azure AKS & Google GKE), SRE practices & observability",
+        "Entra ID Zero-Trust identity, Virtual WAN / Private Link networking, Azure Arc hybrid & multi-region HA/DR",
+        "Google Cloud (GCP) secondary landing zones, Shared VPC, Cloud Run & cross-cloud workload integration"
       ],
       outcomes: [
         {
-          heading: "Repeatable Foundations",
-          body: "Eliminating configuration drift with golden modules and policy-as-code."
+          heading: "Azure-Grade Foundations",
+          body: "Eliminating configuration drift with golden Terraform/Bicep modules and policy-as-code."
         },
         {
           heading: "Operational Resilience",
-          body: "Engineered HA/DR, unified telemetry, and markedly lower MTTR."
+          body: "Engineered zone-redundant HA/DR, unified telemetry, and markedly lower MTTR."
         }
       ],
-      tags: ["Azure · AWS · GCP", "Terraform & Pulumi", "AKS / EKS / GKE", "Zero-Trust SRE"]
+      tags: ["Microsoft Azure", "Google Cloud (GCP)", "Terraform & Bicep", "AKS / GKE · Zero Trust"]
     },
     "ai-platforms": {
       index: "Practice 03 / 05",
@@ -64,25 +64,25 @@
       title: "AI Platform Development",
       topic: "AI Platform Development",
       summary:
-        "Production-grade enterprise AI infrastructure engineered for security, UK/EU data residency, and measurable ROI—bridging the gap between fragile prototypes and dependable business-critical AI services.",
+        "Production-grade enterprise AI infrastructure engineered on Microsoft Azure and Google Cloud for security, UK/EU data residency, and measurable ROI—bridging the gap between fragile prototypes and dependable business-critical AI services.",
       deliverables: [
-        "Private enterprise AI platforms across Azure AI Foundry, AWS Bedrock & GCP Vertex AI",
-        "Retrieval-Augmented Generation (RAG) pipelines, vector indexing & data grounding",
-        "LLMOps / MLOps engineering, model evaluation harnesses & automated deployment",
-        "Data sovereignty, PII redaction, role-based access guardrails & audit logging",
-        "Inference throughput engineering, caching & GPU / token FinOps telemetry"
+        "Private enterprise AI platforms built on Azure AI Foundry, Azure OpenAI & GCP Vertex AI",
+        "Retrieval-Augmented Generation (RAG) pipelines with Azure AI Search, vector indexing & data grounding",
+        "LLMOps / MLOps engineering, model evaluation harnesses & automated deployment pipelines",
+        "Data sovereignty, Microsoft Purview governance, PII redaction, RBAC guardrails & audit logging",
+        "Inference throughput engineering, PTU vs. Pay-Go capacity sizing & token FinOps telemetry"
       ],
       outcomes: [
         {
           heading: "Safe Production Adoption",
-          body: "Enterprise data stays within private boundaries with verifiable guardrails."
+          body: "Enterprise data stays within private VNet/VPC boundaries with verifiable guardrails."
         },
         {
           heading: "Controlled AI Economics",
           body: "Right-sized model routing and live token cost visibility from day one."
         }
       ],
-      tags: ["Azure AI Foundry", "AWS Bedrock", "Vertex AI", "Enterprise RAG & LLMOps"]
+      tags: ["Azure AI Foundry", "Azure OpenAI", "GCP Vertex AI", "Enterprise RAG & LLMOps"]
     },
     assessments: {
       index: "Practice 04 / 05",
@@ -92,7 +92,7 @@
       summary:
         "Independent, unvarnished illumination of technical risk, scalability ceilings, security gaps, and architectural debt—paired with crisp target-state blueprints your engineering teams can execute immediately.",
       deliverables: [
-        "Comprehensive Well-Architected Reviews across Azure, AWS, GCP & hybrid estates",
+        "Comprehensive Well-Architected Reviews across Microsoft Azure, Google Cloud (GCP) & hybrid estates",
         "High-Level Designs (HLD), Low-Level Designs (LLD) & Architecture Decision Records",
         "Single-point-of-failure, resilience, security posture & technical debt diagnostics",
         "Pre-investment, pre-migration & PE/VC technical due diligence assessments",
@@ -116,11 +116,11 @@
       title: "FinOps & Cloud Economics",
       topic: "FinOps & Cloud Economics",
       summary:
-        "Transforming cloud and AI spend from an unpredictable monthly surprise into a transparent, governed unit-economic lever shared seamlessly between finance, leadership, and engineering.",
+        "Transforming Azure, GCP and AI spend from an unpredictable monthly surprise into a transparent, governed unit-economic lever shared seamlessly between finance, leadership, and engineering.",
       deliverables: [
-        "Multi-cloud cost allocation, tagging taxonomy, showback & chargeback models",
-        "Workload rightsizing, idle-capacity automation & storage/egress optimisation",
-        "Commitment strategy: Reserved Instances, Savings Plans & Enterprise Agreements",
+        "Azure & GCP cost allocation, tagging taxonomy, showback & chargeback models",
+        "Workload rightsizing, idle-capacity automation, Azure Hybrid Benefit & storage/egress optimisation",
+        "Commitment strategy: Azure Reservations, Savings Plans, Enterprise Agreements & GCP CUDs",
         "Executive FinOps dashboards, real-time anomaly alerts & budget guardrails",
         "Engineering enablement, cost-aware CI/CD checks & AI workload unit costing"
       ],
@@ -134,62 +134,62 @@
           body: "Clear unit economics connecting infrastructure spend directly to margin."
         }
       ],
-      tags: ["Showback & Chargeback", "RI & Savings Plans", "Unit Economics", "Anomaly Guardrails"]
+      tags: ["Azure Reservations & EA", "Showback & Chargeback", "Unit Economics", "GCP CUDs"]
     }
   };
 
   const CLOUD_BLUEPRINTS = {
     azure: {
-      title: "Microsoft Azure Enterprise Architecture",
-      code: "CAF · AKS · AI FOUNDRY",
+      title: "Microsoft Azure Enterprise Foundations",
+      code: "CAF · ENTRA ID · AKS · ARC",
       rows: [
         [
           "Landing Zone",
-          "Cloud Adoption Framework management groups, Azure Policy guardrails, Hub-and-Spoke / Virtual WAN & Entra ID Zero Trust."
+          "Cloud Adoption Framework management groups, Azure Policy guardrails, Hub-and-Spoke / Virtual WAN, Private Link & Entra ID Zero Trust."
         ],
         [
           "Platform & IaC",
-          "Modular Terraform & Bicep pipelines, hardened AKS clusters, Azure Container Apps, and GitOps release workflows."
+          "Modular Terraform & Bicep pipelines, hardened AKS clusters, Azure Container Apps, Azure DevOps / GitHub Actions & GitOps delivery."
         ],
         [
-          "AI & Data Plane",
-          "Private Azure AI Foundry & Azure OpenAI endpoints, AI Search vector grounding, Microsoft Fabric & private VNet integration."
+          "Hybrid & Security",
+          "Azure Arc hybrid estate control, ExpressRoute connectivity, Defender for Cloud, Microsoft Sentinel & Key Vault secrets governance."
         ],
         [
           "FinOps & Resilience",
-          "Azure Hybrid Benefit, Reservations & Savings Plans optimisation, zone-redundant HA/DR and Defender for Cloud posture."
+          "Azure Hybrid Benefit, Reservations & Savings Plans optimisation, availability-zone HA/DR and Enterprise Agreement cost modelling."
         ]
       ]
     },
-    aws: {
-      title: "Amazon Web Services Enterprise Architecture",
-      code: "CONTROL TOWER · EKS · BEDROCK",
+    "azure-ai": {
+      title: "Microsoft Azure AI & Data Platform",
+      code: "AI FOUNDRY · OPENAI · FABRIC",
       rows: [
         [
-          "Landing Zone",
-          "AWS Organizations, Control Tower, Service Control Policies (SCPs), Transit Gateway segmentation & IAM Identity Center."
+          "Private AI Plane",
+          "Azure AI Foundry & Azure OpenAI Service deployed behind Private Endpoints, API Management token gateways & UK South/West residency."
         ],
         [
-          "Platform & IaC",
-          "Terraform & Pulumi golden modules, hardened Amazon EKS, ECS/Fargate serverless compute, and declarative GitOps delivery."
+          "Enterprise RAG",
+          "Azure AI Search hybrid/vector grounding, Document Intelligence ingestion, SharePoint & Microsoft 365 permission-trimmed retrieval."
         ],
         [
-          "AI & Data Plane",
-          "Private Amazon Bedrock model access via VPC endpoints, Knowledge Bases & Guardrails, SageMaker pipelines and Lake Formation."
+          "Data & Governance",
+          "Microsoft Fabric lakehouse pipelines, Azure Databricks, Microsoft Purview lineage, sensitivity labels & automated PII redaction."
         ],
         [
-          "FinOps & Resilience",
-          "CUR analytics, org-wide chargeback tagging, Compute & EC2 Savings Plans strategy, multi-AZ/region failover and AWS Backup."
+          "AI FinOps & Ops",
+          "Provisioned Throughput Units (PTU) vs. Pay-Go capacity modelling, evaluation harnesses, prompt-shield guardrails & per-team chargeback."
         ]
       ]
     },
     gcp: {
-      title: "Google Cloud Platform Enterprise Architecture",
+      title: "Google Cloud Platform (Secondary Cloud)",
       code: "ORG POLICY · GKE · VERTEX AI",
       rows: [
         [
           "Landing Zone",
-          "GCP Resource Hierarchy, Organization Policies, Shared VPC architecture, Cloud Armor, VPC Service Controls & Cloud IAM."
+          "GCP Resource Hierarchy, Organization Policies, Shared VPC architecture, Cloud Armor, VPC Service Controls & Cloud IAM federation with Entra ID."
         ],
         [
           "Platform & IaC",
@@ -206,12 +206,12 @@
       ]
     },
     ai: {
-      title: "Sovereign & Governed Enterprise AI Platforms",
-      code: "RAG · LLMOPS · GUARDRAILS",
+      title: "Cross-Cloud AI Governance & Guardrails",
+      code: "RAG · LLMOPS · COMPLIANCE",
       rows: [
         [
           "Private Model Access",
-          "Zero-data-retention API gateways, private VNet/VPC endpoints, and multi-model routing across Azure, AWS, GCP & open-weight models."
+          "Zero-data-retention API gateways, private VNet/VPC endpoints, and multi-model routing across Azure AI Foundry, GCP Vertex AI & open-weight models."
         ],
         [
           "Enterprise Grounding",
@@ -485,7 +485,7 @@
 
     const modellerState = {
       monthlyK: 75,
-      footprint: "multi",
+      footprint: "single",
       maturity: "low"
     };
 
@@ -554,12 +554,12 @@
 
       let title = "4-Week Architecture & FinOps Diagnostic";
       let note =
-        "Rapid cloud and cost audit delivering a board-ready savings business case, quick-win execution plan, and target landing-zone governance blueprint.";
+        "Rapid Azure & cloud audit delivering a board-ready savings business case, quick-win execution plan, and target landing-zone governance blueprint.";
 
       if (wantsCIO && wantsAI) {
-        title = "Retained Fractional CIO + AI & Cloud Governance Programme";
+        title = "Retained Fractional CIO + Azure AI & Cloud Governance Programme";
         note =
-          "Executive boardroom oversight paired with a governed enterprise AI platform architecture and continuous multi-cloud FinOps accountability.";
+          "Executive boardroom oversight paired with a governed enterprise AI platform architecture and continuous Azure / GCP FinOps accountability.";
       } else if (wantsCIO) {
         title = "Fractional CIO Retainer + 30-Day Estate Baseline";
         note =
@@ -567,15 +567,15 @@
       } else if (wantsAI) {
         title = "Enterprise AI Platform Blueprint & FinOps Guardrails";
         note =
-          "Private, compliant RAG / model-serving architecture across Azure, AWS or GCP paired with token/GPU cost telemetry and landing-zone security.";
+          "Private, compliant RAG / model-serving architecture on Azure AI Foundry or GCP Vertex AI paired with token/PTU cost telemetry and landing-zone security.";
       } else if (!wantsAssess && modellerState.maturity !== "low") {
         title = "Targeted FinOps Commitment & Unit-Economics Sprint";
         note =
-          "Focused Savings Plan / RI strategy, chargeback allocation, and automated rightsizing guardrails engineered for rapid payback.";
+          "Focused Azure Reservations, Savings Plans, Hybrid Benefit & GCP CUDs strategy, chargeback allocation, and automated rightsizing guardrails.";
       } else if (modellerState.monthlyK >= 200) {
-        title = "6-Week Multi-Cloud Architecture, EA & FinOps Transformation";
+        title = "6-Week Azure Enterprise Architecture, EA & FinOps Transformation";
         note =
-          "Deep architectural review, enterprise agreement / commitment modelling, and multi-account governance designed for high-spend estates.";
+          "Deep architectural review, Microsoft Enterprise Agreement / commitment modelling, and multi-subscription governance designed for high-spend estates.";
       }
 
       if (recTitle) recTitle.textContent = title;
@@ -583,10 +583,10 @@
 
       const footprintText =
         modellerState.footprint === "single"
-          ? "Single Cloud"
+          ? "Azure Estate"
           : modellerState.footprint === "multi"
-            ? "Multi-Cloud (Azure/AWS/GCP)"
-            : "Hybrid + On-Premises";
+            ? "Azure + GCP"
+            : "Azure Hybrid / On-Premises";
 
       const maturityText =
         modellerState.maturity === "low"
@@ -662,7 +662,7 @@
     const copyEmailBtn = document.getElementById("copyEmailBtn");
     if (copyEmailBtn) {
       copyEmailBtn.addEventListener("click", async () => {
-        const email = copyEmailBtn.dataset.email || "info@infralight.co.uk";
+        const email = copyEmailBtn.dataset.email || "steven@infralight.co.uk";
         try {
           if (navigator.clipboard && navigator.clipboard.writeText) {
             await navigator.clipboard.writeText(email);
@@ -722,12 +722,12 @@
             statusEl.textContent =
               payload && payload.errors
                 ? payload.errors.map((err) => err.message).join(", ")
-                : "Unable to send right now. Please email info@infralight.co.uk directly.";
+                : "Unable to send right now. Please email steven@infralight.co.uk directly.";
             statusEl.classList.add("is-error");
           }
         } catch {
           statusEl.textContent =
-            "Network submission was unavailable in this environment. Please email info@infralight.co.uk directly.";
+            "Network submission was unavailable in this environment. Please email steven@infralight.co.uk directly.";
           statusEl.classList.add("is-error");
         } finally {
           if (submitBtn) {
