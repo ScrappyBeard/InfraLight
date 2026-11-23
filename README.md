@@ -10,6 +10,6 @@ Production-ready static website for **Infralight**, built with semantic HTML5, V
 - **SEO & Performance**: JSON-LD structured data, Open Graph metadata, responsive WebP + JPEG photography, `sitemap.xml`, `robots.txt`, and `CNAME` pre-configured for `infralight.co.uk`.
 
 ## Deploying to GitHub Pages
-1. Push the contents of this directory to your GitHub Pages repository (the `CNAME` file is already set to `infralight.co.uk`).
+1. Upload or push all files in this folder directly to your GitHub Pages repository root (the `CNAME` file is already set to `infralight.co.uk`, and all images live alongside `index.html` for drag-and-drop compatibility).
 2. In GitHub repository **Settings → Pages**, enable deployment from your main branch root (`/`) and verify **Enforce HTTPS**.
 3. Ensure your DNS records for `infralight.co.uk` point to GitHub Pages (`A` records for the apex domain and `CNAME` for `www`).
